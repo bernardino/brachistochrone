@@ -104,7 +104,7 @@ def brachistochrone():
 		if select==1: # tournament
 			parents = [tournament_selection(population, tsize) for i in xrange(size_pop)]
 		else: # roulette
-			parents = [tournament_selection(population, tsize) for i in xrange(size_pop)]
+			parents = [roulette(population) for i in xrange(size_pop)]
 		
 		# produce offspring
 		offspring = []
