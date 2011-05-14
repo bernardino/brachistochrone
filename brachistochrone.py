@@ -3,7 +3,9 @@
 
 import random
 from BrachFitness import calcBrachTime as fitness
+from operator import itemgetter
 
+size_gen = input("Número de gerações: ")
 size_pop = input("Tamanho da população: ")
 n_points = input("Numero de pontos: ")
 while 1:
@@ -51,7 +53,7 @@ def create_population(size_pop):
 def recnpoints(npoints, individuos):
 	size = len(individuos)
 	
-	size_i = len(individuos[0])
+	size_i = len(individuos[0][0])
 	
 	chosen = [-1 for i in xrange(npoints)]
 	num = 0
@@ -70,29 +72,61 @@ def recnpoints(npoints, individuos):
 	
 	prev = 0
 	for i in xrange(npoints):
-		individuos[ind1][prev:chosen[i]], individuos[ind2][prev:chosen[i]] = individuos[ind2][prev:chosen[i]], individuos[ind1][prev:chosen[i]]
+		individuos[ind1][0][prev:chosen[i]], individuos[ind2][0][prev:chosen[i]] = individuos[ind2][0][prev:chosen[i]], individuos[ind1][0][prev:chosen[i]]
 		prev = chosen[i]
 
 
 def tournament(individuos, tsize):
-	elements = random.sample(xrange(len(individuos)),tsize)
-	
-	values = [[0,0] for i in xrange(elements)]
-	j = 0
-	for i in elements:
-		values[j] = [fitness(individuos[i]),i]
-		j += 1
-	best = min(values) #minimization
-	return best[1]
+	elements = random.sample(individuos, tsize)
+	elements.sort(key=itemgetter(1)) # minimization
+	return elements[0]
 
 
-def roulette():
-	elements = random.sample(xrange(len(individuos)),tsize)
-	
+def roulette(individuos):
+	element = random.randint(0,size_pop)
+	return individuos[element]	
 
 
 def mutation(individuo):
 	point = random.randint(0,n_points)
 	
-	individuo[point*2+1] = random.random()*start[1] # menor que o Y inicial
+	individuo[0][point*2+1] = random.random()*start[1] # menor que o Y inicial
 
+def brachistochrone():
+	# create initial population
+	population = create_population(size_pop)
+	# evaluate population
+	population = [[indiv, fitness(indiv)] for indiv in population]
+	population.sort(key=itemgetter(1))
+	
+	for generation in xrange(size_gen):
+		# select parents
+		if select==1: # tournament
+			parents = [tournament_selection(population, tsize) for i in xrange(size_pop)]
+		else: # roulette
+			parents = [tournament_selection(population, tsize) for i in xrange(size_pop)]
+		
+		# produce offspring
+		offspring = []
+		
+		# crossover
+		for i in xrange(size_pop):
+			if random.random() < prec:
+				offspring.append(recnpoints(parents[i]))
+			else:
+				offspring.append(parents[i])
+		
+		# mutation
+		for i in xrange(size_pop):
+			if random.random() < pgene:
+				offspring[i] = mutation(parents[i])
+			else:
+				offspring[i] = parents[i]
+		
+		# evaluate offspring
+		offspring = [[indiv[0], fitness(indiv[0])] for indiv in offspring]
+		offspring.sort(key=itemgetter(1))
+		# select survivors
+		population[sizepop-elite:] = offspring[:elite]
+		population.sort(key=itemgetter(1))
+	print "Best took %d seconds " %population[0][1]
