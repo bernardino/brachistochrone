@@ -1,0 +1,84 @@
+Generation: 1
+
+Best: 5.7254564751 seconds
+Worst: 11.6952419226 seconds
+Average: 8.73017826703 seconds
+Standard Deviation: 1.27014144737 seconds
+------------------------------
+Generation: 2
+
+Best: 5.7254564751 seconds
+Worst: 10.8940010984 seconds
+Average: 8.56013431959 seconds
+Standard Deviation: 1.28107069224 seconds
+------------------------------
+Generation: 3
+
+Best: 5.7254564751 seconds
+Worst: 10.5232542904 seconds
+Average: 8.41052754822 seconds
+Standard Deviation: 1.31191534229 seconds
+------------------------------
+Generation: 4
+
+Best: 5.7254564751 seconds
+Worst: 10.2926478339 seconds
+Average: 8.27101681005 seconds
+Standard Deviation: 1.34259590883 seconds
+------------------------------
+Generation: 5
+
+Best: 5.7254564751 seconds
+Worst: 10.1554034343 seconds
+Average: 8.13518420887 seconds
+Standard Deviation: 1.36424324064 seconds
+------------------------------
+Generation: 6
+
+Best: 5.7254564751 seconds
+Worst: 10.0223992655 seconds
+Average: 8.003510186 seconds
+Standard Deviation: 1.37869792252 seconds
+------------------------------
+Generation: 7
+
+Best: 5.7254564751 seconds
+Worst: 9.93763554976 seconds
+Average: 7.87473546016 seconds
+Standard Deviation: 1.38504392167 seconds
+------------------------------
+Generation: 8
+
+Best: 5.7254564751 seconds
+Worst: 9.89191694523 seconds
+Average: 7.74909141239 seconds
+Standard Deviation: 1.38434283885 seconds
+------------------------------
+Generation: 9
+
+Best: 5.7254564751 seconds
+Worst: 9.65492651386 seconds
+Average: 7.62658249335 seconds
+Standard Deviation: 1.37713967495 seconds
+------------------------------
+Generation: 10
+
+Best: 5.7254564751 seconds
+Worst: 9.62384213034 seconds
+Average: 7.50895712342 seconds
+Standard Deviation: 1.36691131352 seconds
+------------------------------
+Generation: 11
+
+Best: 5.7254564751 seconds
+Worst: 9.58463247355 seconds
+Average: 7.3925955175 seconds
+Standard Deviation: 1.34837855703 seconds
+------------------------------
+Generation: 12
+
+Best: 5.7254564751 seconds
+Worst: 9.42495830342 seconds
+Average: 7.27805602591 seconds
+Standard Deviation: 1.32244212475 seconds
+------------------------------

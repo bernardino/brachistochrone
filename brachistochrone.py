@@ -1,15 +1,23 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import random
+import random, math
 from BrachFitness import calcBrachTime as fitness
 from operator import itemgetter
+
+FILE = open("results.txt",'w')
 
 best = []
 size_gen = input("Número de gerações: ")
 size_pop = input("Tamanho da população: ")
 n_points = input("Numero de pontos: ")
-representacao = input("Representação (1-2):")
+
+while 1:
+	representacao = raw_input("Representação:\n  1-Pontos com espaçamento bem definido\n  2-Pontos espaçados aleatoriamente")
+	if representacao=='1' or representacao=='2':
+		representacao = int(representacao)
+		break
+
 elite = input("Elitismo: ")
 
 while 1:
@@ -118,6 +126,23 @@ def mutation(individuo):
 	individuo[0][point*2+1] = random.random()*start[1] # menor que o Y inicial
 	return individuo
 
+def average(population):
+	soma = 0.0
+	for i in xrange(size_pop):
+		soma += population[i][1]
+	
+	return soma/size_pop
+
+def stdev(population):
+	avg = average(population)
+	soma = 0.0
+	for i in population:
+		soma += ((i[1]-avg)**2)
+	
+	stdev = math.sqrt(1/(size_pop-1.0)*soma)
+	
+	return stdev
+
 
 def brachistochrone():
 	# create initial population
@@ -158,10 +183,18 @@ def brachistochrone():
 		# select survivors
 		population[size_pop-elite:] = offspring[:elite]
 		population.sort(key=itemgetter(1))
+		FILE.write("Generation: "+str(generation+1)+"\n\n")
+		FILE.write("Best: "+str(population[0][1])+" seconds\n")
+		FILE.write("Worst: "+str(population[size_pop-1][1])+" seconds\n")
+		FILE.write("Average: "+str(average(population))+" seconds\n")
+		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
+		FILE.write("-"*30+"\n")
+	
 	print "Best took %f seconds " %population[0][1]
 	best.append(population[0][1])
 	return True
 
+"""
 seleccao = 1
 print "\nRoleta"
 seed = random.random()*10000
@@ -177,3 +210,6 @@ print "\nTorneio"
 for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
+"""
+brachistochrone()
+FILE.close()
