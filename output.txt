@@ -1,5 +1,29 @@
-Número de gerações: Tamanho da população: Numero de pontos: Probabilidade de mutação (0-1): Probabilidade de recombinação (0-1): Numero de pontos para recombinação: Seleccao:
+Número de gerações: Tamanho da população: Numero de pontos: Representação (1-2):Elitismo: Probabilidade de mutação (0-1): Probabilidade de recombinação (0-1): Numero de pontos para recombinação: Seleccao:
   1-Roleta
   2-Torneio
-Tamanho do torneio: Coordenadas do ponto de partida (x y): Coordenadas do ponto de chegada (x y): Elitismo: 
+Tamanho do torneio: Coordenadas do ponto de partida (x y): Coordenadas do ponto de chegada (x y): 
 Roleta
+Best took 6.132987 seconds 
+Best took 6.168860 seconds 
+Best took 6.392489 seconds 
+Best took 6.072242 seconds 
+Best took 6.251705 seconds 
+Best took 6.447205 seconds 
+Best took 6.509901 seconds 
+Best took 6.390776 seconds 
+Best took 6.120975 seconds 
+Best took 5.744803 seconds 
+AVERAGE: 6.223194
+
+Torneio
+Best took 6.093830 seconds 
+Best took 6.398857 seconds 
+Best took 6.663820 seconds 
+Best took 5.644595 seconds 
+Best took 6.425518 seconds 
+Best took 5.264406 seconds 
+Best took 6.147797 seconds 
+Best took 6.439131 seconds 
+Best took 5.888540 seconds 
+Best took 6.403931 seconds 
+AVERAGE: 6.137042
