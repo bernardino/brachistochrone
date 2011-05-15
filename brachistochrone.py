@@ -5,6 +5,7 @@ import random
 from BrachFitness import calcBrachTime as fitness
 from operator import itemgetter
 
+best = []
 size_gen = input("Número de gerações: ")
 size_pop = input("Tamanho da população: ")
 n_points = input("Numero de pontos: ")
@@ -16,6 +17,8 @@ while 1:
 while 1:
 	prec = input("Probabilidade de recombinação (0-1): ")
 	if prec >= 0 and prec <= 1:
+		if prec>0:
+			rec_points = input("Numero de pontos para recombinação: ")
 		break
 
 while 1:
@@ -51,14 +54,14 @@ def create_population(size_pop):
 	
 	return pop
 
-def recnpoints(npoints, individuos):
+def recnpoints(individuos):
 	size = len(individuos)
 	
 	size_i = len(individuos[0][0])
 	
-	chosen = [-1 for i in xrange(npoints)]
+	chosen = [-1 for i in xrange(rec_points)]
 	num = 0
-	for i in xrange(npoints):
+	for i in xrange(rec_points):
 		while num not in chosen:
 			num = random.randint(0, size_i)
 		chosen[i] = num
@@ -132,11 +135,16 @@ def brachistochrone():
 		population[size_pop-elite:] = offspring[:elite]
 		population.sort(key=itemgetter(1))
 	print "Best took %f seconds " %population[0][1]
+	best.append(population[0][1])
+	return True
 
 print "\nRoleta"
 for i in xrange(10):
 	brachistochrone()
+print "AVERAGE: %f" %(sum(best)/10)
 seleccao = 2
+best = []
 print "\nTorneio"
 for i in xrange(10):
 	brachistochrone()
+print "AVERAGE: %f" %(sum(best)/10)
