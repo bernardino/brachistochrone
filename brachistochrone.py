@@ -107,7 +107,7 @@ def recnpoints(individuo1, individuo2):
 	chosen.sort()
 	
 	prev = 0
-	for i in xrange(rec_points):
+	for i in xrange(0,rec_points,2):
 		individuo1[0][prev:chosen[i]], individuo2[0][prev:chosen[i]] = individuo2[0][prev:chosen[i]], individuo1[0][prev:chosen[i]]
 		prev = chosen[i]
 	
@@ -199,8 +199,8 @@ def brachistochrone():
 		points = []
 		points.append([start[0]*50,start[1]*50])
 		for i in xrange(0,len(population[0][0]),2):
-			points.append([ population[0][0][i]*50, population[0][0][i+1]*50 ])
-		points.append([finish[0]*50, finish[1]*50 ])
+			points.append([population[0][0][i]*50, population[0][0][i+1]*50 ])
+		points.append([finish[0]*50, finish[1]*50])
 		#print points
 		clear()
 		pd()
