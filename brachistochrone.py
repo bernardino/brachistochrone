@@ -96,7 +96,7 @@ def create_population(size_pop):
 
 
 def tournament(individuos, tsize):
-	elements = random.sample(individuos, tsize)
+	elements = list(random.sample(individuos, tsize))
 	elements.sort(key=itemgetter(1)) # minimization
 	
 	return elements[0]
@@ -140,7 +140,6 @@ def recnpoints(individuo1, individuo2):
 	chosen.sort()
 	
 	prev = 0
-	print len(chosen)
 	for i in xrange(0,rec_points,2):
 		individuo1[0][prev:2*chosen[i]], individuo2[0][prev:2*chosen[i]] = individuo2[0][prev:2*chosen[i]], individuo1[0][prev:2*chosen[i]]
 		if i+1<len(chosen):
@@ -190,21 +189,23 @@ def brachistochrone():
 		# crossover
 		for i in xrange(0, size_pop,2):
 			if random.random() < prec:
-				offspring.extend(recnpoints(parents[i],parents[i+1]))
+				offspring.extend(recnpoints(parents[i][:],parents[i+1][:]))
 			else:
-				offspring.extend([parents[i],parents[i+1]])
+				offspring.extend([parents[i][:],parents[i+1][:]])
 
 		# mutation
 		for i in xrange(size_pop):
 			offspring[i] = mutation(offspring[i])
 		
 		# evaluate offspring
-		offspring2 = [[indiv[0], fitness(start+indiv[0]+finish)] for indiv in offspring]
+		offspring2 = [[indiv[0][:], fitness(start+indiv[0]+finish)] for indiv in offspring]
 		offspring2.sort(key=itemgetter(1))
-
+		
 		# select survivors
-		population[size_pop-elite:] = offspring2[:elite]
+		population[size_pop-elite:] = list(offspring2[:elite])
 		population.sort(key=itemgetter(1))
+		print population[0][0]
+		print 'fitness %f'%(population[0][1])
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
 		FILE.write("Worst: "+str(population[size_pop-1][1])+" seconds\n")
@@ -212,24 +213,19 @@ def brachistochrone():
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
 		
-		print str(generation)+"\n"
-		print population[0][0], population[0][1]
-		print population[1][0], population[1][1]
-		print population[2][0], population[2][1]
-		
-		points = []
-		points.append([start[0]*50,start[1]*50])
-		for i in xrange(0,len(population[0][0]),2):
-			points.append([ population[0][0][i]*50, population[0][0][i+1]*50 ])
-		points.append([finish[0]*50, finish[1]*50 ])
-		#print points
-		clear()
-		pd()
-		for i in xrange(0,len(points)):
-			goto(points[i])
-		pu()
-		setpos(start[0]*50,start[1]*50)
-		time.sleep(0.5)
+	points = []
+	points.append([start[0]*50,start[1]*50])
+	for i in xrange(0,len(population[0][0]),2):
+		points.append([ population[0][0][i]*50, population[0][0][i+1]*50 ])
+	points.append([finish[0]*50, finish[1]*50 ])
+	#print points
+	clear()
+	pd()
+	for i in xrange(0,len(points)):
+		goto(points[i])
+	pu()
+	setpos(start[0]*50,start[1]*50)
+	time.sleep(0.5)
 	
 	print "Best took %f seconds " %population[0][1]
 	best.append(population[0][1])
@@ -252,9 +248,8 @@ for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
 """
+ht()
 winsize(1500,700,100,100)
-pd()
 setpos(start[0]*50,start[1]*50)
-pu()
 brachistochrone()
 FILE.close()
