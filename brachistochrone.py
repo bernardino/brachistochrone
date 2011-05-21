@@ -140,9 +140,11 @@ def recnpoints(individuo1, individuo2):
 	chosen.sort()
 	
 	prev = 0
+	print len(chosen)
 	for i in xrange(0,rec_points,2):
 		individuo1[0][prev:2*chosen[i]], individuo2[0][prev:2*chosen[i]] = individuo2[0][prev:2*chosen[i]], individuo1[0][prev:2*chosen[i]]
-		prev = 2*chosen[i]
+		if i+1<len(chosen):
+			prev = 2*chosen[i+1]
 	
 	if seleccao == 2:
 		pass
