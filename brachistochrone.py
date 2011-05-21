@@ -9,8 +9,8 @@ from xturtle import *
 FILE = open("results.txt",'w')
 
 best = []
-size_gen = input("Número de gerações: ")
-size_pop = input("Tamanho da população: ")
+size_gen = input("Numero de geraçoes: ")
+size_pop = input("Tamanho da populaçao: ")
 n_points = input("Numero de pontos: ")
 
 while 1:
@@ -107,9 +107,9 @@ def recnpoints(individuo1, individuo2):
 	chosen.sort()
 	
 	prev = 0
-	for i in xrange(rec_points):
+	for i in xrange(0,rec_points,2):
 		individuo1[0][prev:chosen[i]], individuo2[0][prev:chosen[i]] = individuo2[0][prev:chosen[i]], individuo1[0][prev:chosen[i]]
-		prev = chosen[i]
+		prev = chosen[i+1]
 	
 	return [individuo1, individuo2]
 
