@@ -57,7 +57,7 @@ def calcBrachTime(indiv, debug = False):
 		dv = v_j - v_i
 		
 		#The speed variation over the acceleration gives us the time. Voila
-		time += dv/ai
+		time += dv/ai if ai != 0 else li/v_j
 		
 		#Debugging, ignore
 		if(debug):
