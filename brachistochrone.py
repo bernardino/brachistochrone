@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import random, math
+import random, math, sys, time
 from BrachFitness import calcBrachTime as fitness
 from operator import itemgetter
+from xturtle import *
 
 FILE = open("results.txt",'w')
 
@@ -13,7 +14,7 @@ size_pop = input("Tamanho da população: ")
 n_points = input("Numero de pontos: ")
 
 while 1:
-	representacao = raw_input("Representação:\n  1-Pontos com espaçamento bem definido\n  2-Pontos espaçados aleatoriamente")
+	representacao = raw_input("Representação:\n  1-Pontos com espaçamento bem definido\n  2-Pontos espaçados aleatoriamente\n")
 	if representacao=='1' or representacao=='2':
 		representacao = int(representacao)
 		break
@@ -37,7 +38,10 @@ while 1:
 	if seleccao == '1' or seleccao == '2':
 		seleccao = int(seleccao)
 		break
-tsize = input("Tamanho do torneio: ")
+
+if seleccao==2:
+	tsize = input("Tamanho do torneio: ")
+
 start = [int(s) for s in raw_input("Coordenadas do ponto de partida (x y): ").split()]
 
 while 1:
@@ -45,15 +49,17 @@ while 1:
 	if start[1]>finish[1] and start[0]<finish[0]:
 		break
 
+
 def create_indiv(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
 	step = float(finish[0]-start[0])/(npoints+2)
-	j=0
+	j=1
 	for i in xrange(0,npoints*2,2):
-		indiv[i] = start[0]+(j+1)*step
+		indiv[i] = start[0]+ j*step
 		indiv[i+1] = random.random()*start[1] # menor que o Y inicial
 		j+=1
 	return indiv
+
 
 
 def create_indiv_2(npoints):
@@ -91,7 +97,7 @@ def create_population(size_pop):
 def recnpoints(individuo1, individuo2):
 	size_i = len(individuo1[0])
 	
-	chosen = [-1 for i in xrange(rec_points)]
+	chosen = [0 for i in xrange(rec_points)]
 	num = 0
 	for i in xrange(rec_points):
 		while num in chosen:
@@ -151,35 +157,35 @@ def brachistochrone():
 	# evaluate population
 	population = [[indiv, fitness(start+indiv+finish)] for indiv in population]	
 	population.sort(key=itemgetter(1))
-	
 	for generation in xrange(size_gen):
+		parents = []
 		# select parents
 		if seleccao==2: # tournament
 			parents = [tournament(population, tsize) for i in xrange(size_pop)]
 		else: # roulette
 			parents = [roulette(population) for i in xrange(size_pop)]
-		
+
 		# produce offspring
 		offspring = []
-		
+
 		# crossover
 		for i in xrange(0, size_pop,2):
 			if random.random() < prec:
 				offspring.extend(recnpoints(parents[i],parents[i+1]))
 			else:
 				offspring.extend([parents[i],parents[i+1]])
-		
+
 		# mutation
 		for i in xrange(size_pop):
 			if random.random() < pgene:
 				offspring[i] = mutation(parents[i])
 			else:
 				offspring[i] = parents[i]
-		
+
 		# evaluate offspring
 		offspring = [[indiv[0], fitness(start+indiv[0]+finish)] for indiv in offspring]
 		offspring.sort(key=itemgetter(1))
-		
+
 		# select survivors
 		population[size_pop-elite:] = offspring[:elite]
 		population.sort(key=itemgetter(1))
@@ -189,6 +195,20 @@ def brachistochrone():
 		FILE.write("Average: "+str(average(population))+" seconds\n")
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
+		
+		points = []
+		points.append([start[0]*50,start[1]*50])
+		for i in xrange(0,len(population[0][0]),2):
+			points.append([ population[0][0][i]*50, population[0][0][i+1]*50 ])
+		points.append([finish[0]*50, finish[1]*50 ])
+		#print points
+		clear()
+		pd()
+		for i in xrange(0,len(points)):
+			goto(points[i])
+		pu()
+		setpos(start[0]*50,start[1]*50)
+		time.sleep(1)
 	
 	print "Best took %f seconds " %population[0][1]
 	best.append(population[0][1])
@@ -211,5 +231,9 @@ for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
 """
+winsize(1000,700,100,100)
+pd()
+setpos(start[0]*50,start[1]*50)
+pu()
 brachistochrone()
 FILE.close()
