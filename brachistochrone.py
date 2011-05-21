@@ -217,17 +217,17 @@ def brachistochrone():
 		print population[2][0], population[2][1]
 		
 		points = []
-		points.append([start[0]*50,start[1]*50])
+		points.append([start[0]*50-250,start[1]*50-50])
 		for i in xrange(0,len(population[0][0]),2):
-			points.append([population[0][0][i]*50, population[0][0][i+1]*50 ])
-		points.append([finish[0]*50, finish[1]*50])
+			points.append([population[0][0][i]*50-250, population[0][0][i+1]*50-50])
+		points.append([finish[0]*50-250, finish[1]*50-50])
 		#print points
 		clear()
 		pd()
 		for i in xrange(0,len(points)):
 			goto(points[i])
 		pu()
-		setpos(start[0]*50,start[1]*50)
+		setpos(start[0]*50-250,start[1]*50-50)
 		time.sleep(0.5)
 	
 	print "Best took %f seconds " %population[0][1]
@@ -251,9 +251,9 @@ for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
 """
-winsize(1500,700,100,100)
+winsize(600,500,100,100)
 pd()
-setpos(start[0]*50,start[1]*50)
+setpos(start[0]*50-250,start[1]*50-50)
 pu()
 brachistochrone()
 FILE.close()
