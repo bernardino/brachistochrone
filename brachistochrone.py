@@ -94,25 +94,6 @@ def create_population(size_pop):
 	
 	return pop
 
-def recnpoints(individuo1, individuo2):
-	size_i = len(individuo1[0])
-	
-	chosen = [0 for i in xrange(rec_points)]
-	num = 0
-	for i in xrange(rec_points):
-		while num in chosen:
-			num = random.randint(0, size_i-1)
-		chosen[i] = num
-	
-	chosen.sort()
-	
-	prev = 0
-	for i in xrange(rec_points):
-		individuo1[0][prev:chosen[i]], individuo2[0][prev:chosen[i]] = individuo2[0][prev:chosen[i]], individuo1[0][prev:chosen[i]]
-		prev = chosen[i]
-	
-	return [individuo1, individuo2]
-
 
 def tournament(individuos, tsize):
 	elements = random.sample(individuos, tsize)
@@ -122,15 +103,51 @@ def tournament(individuos, tsize):
 
 
 def roulette(individuos):
-	element = random.randint(0,size_pop-1)
-	return individuos[element]	
+	sumfitness = 0.0
+	for i in individuos:
+		sumfitness += 1/i[1]
+	
+	probability = [0 for i in xrange(len(individuos))]
+	sumprob = 0.0
+	for i in xrange(len(individuos)):
+		probability[i] = sumprob + ((1/individuos[i][1]) / sumfitness)
+		sumprob += probability[i]
+	
+	for i in xrange(len(individuos)):
+		if random.random() <= probability[i]:
+			return individuos[i]	
 
 
 def mutation(individuo):
-	point = random.randint(0,n_points-1)
-	
-	individuo[0][point*2+1] = random.random()*start[1] # menor que o Y inicial
+	if seleccao==1:
+		for i in xrange(1,len(individuo),2):
+			if random.random() < pgene:
+				individuo[i] = random.random()*start[1]
+	else:
+		pass
 	return individuo
+
+def recnpoints(individuo1, individuo2):
+	size_i = len(individuo1[0])
+	
+	chosen = [0 for i in xrange(rec_points)]
+	num = 0
+	for i in xrange(rec_points):
+		while num in chosen:
+			num = random.randint(0, n_points-1)
+		chosen[i] = num
+	
+	chosen.sort()
+	
+	prev = 0
+	for i in xrange(rec_points):
+		individuo1[0][prev:2*chosen[i]], individuo2[0][prev:2*chosen[i]] = individuo2[0][prev:2*chosen[i]], individuo1[0][prev:2*chosen[i]]
+		prev = 2*chosen[i]
+	
+	if seleccao == 2:
+		pass
+	
+	return [individuo1, individuo2]
 
 def average(population):
 	soma = 0.0
@@ -177,17 +194,14 @@ def brachistochrone():
 
 		# mutation
 		for i in xrange(size_pop):
-			if random.random() < pgene:
-				offspring[i] = mutation(parents[i])
-			else:
-				offspring[i] = parents[i]
-
+			offspring[i] = mutation(offspring[i])
+		
 		# evaluate offspring
-		offspring = [[indiv[0], fitness(start+indiv[0]+finish)] for indiv in offspring]
-		offspring.sort(key=itemgetter(1))
+		offspring2 = [[indiv[0], fitness(start+indiv[0]+finish)] for indiv in offspring]
+		offspring2.sort(key=itemgetter(1))
 
 		# select survivors
-		population[size_pop-elite:] = offspring[:elite]
+		population[size_pop-elite:] = offspring2[:elite]
 		population.sort(key=itemgetter(1))
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
@@ -195,6 +209,11 @@ def brachistochrone():
 		FILE.write("Average: "+str(average(population))+" seconds\n")
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
+		
+		print str(generation)+"\n"
+		print population[0][0], population[0][1]
+		print population[1][0], population[1][1]
+		print population[2][0], population[2][1]
 		
 		points = []
 		points.append([start[0]*50,start[1]*50])
@@ -208,7 +227,7 @@ def brachistochrone():
 			goto(points[i])
 		pu()
 		setpos(start[0]*50,start[1]*50)
-		time.sleep(1)
+		time.sleep(0.5)
 	
 	print "Best took %f seconds " %population[0][1]
 	best.append(population[0][1])
@@ -231,7 +250,7 @@ for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
 """
-winsize(1000,700,100,100)
+winsize(1500,700,100,100)
 pd()
 setpos(start[0]*50,start[1]*50)
 pu()
