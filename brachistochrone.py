@@ -120,11 +120,23 @@ def roulette(individuos):
 
 def mutation(individuo):
 	if representacao==1:
-		for i in xrange(1,len(individuo),2):
+		for i in xrange(1,len(individuo[0]),2):
 			if random.random() < pgene:
-				individuo[i] = random.random()*start[1]
+				individuo[0][i] = random.random()*start[1]
 	else:
-		pass
+		prev = start[0]
+		dif=0
+		for i in xrange(0,len(individuo[0]),2):
+			if random.random() < pgene:
+				if i+2>=len(individuo[0])-1:
+					dif = finish[0]-prev
+				else:
+					dif = individuo[0][i+2]-prev
+				
+				individuo[0][i] = prev+random.random()*dif
+				individuo[0][i+1] = random.random()*start[1]
+			prev = individuo[0][i]
+	
 	return individuo
 
 def recnpoints(individuo1, individuo2):
@@ -154,9 +166,8 @@ def recnpoints(individuo1, individuo2):
 			points2[j][1] = individuo2[0][i+1]
 			j += 1
 		points.sort(key=itemgetter(0))
-		print points
 		points2.sort(key=itemgetter(0))
-		print points2
+		
 		j=0
 		for i in xrange(0,n_points*2,2):
 			individuo1[0][i] = points[j][0]
