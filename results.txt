@@ -1,2100 +1,2100 @@
 Generation: 1
 
-Best: 2.09166604033 seconds
-Worst: 5.26536529232 seconds
-Average: 3.38184171246 seconds
-Standard Deviation: 0.630958050302 seconds
+Best: 1.90360157148 seconds
+Worst: 4.78670750203 seconds
+Average: 3.33975761365 seconds
+Standard Deviation: 0.601661838691 seconds
 ------------------------------
 Generation: 2
 
-Best: 1.88500024468 seconds
-Worst: 4.80618844779 seconds
-Average: 3.326468959 seconds
-Standard Deviation: 0.616074227025 seconds
+Best: 1.93193624411 seconds
+Worst: 4.58106247365 seconds
+Average: 3.30151861807 seconds
+Standard Deviation: 0.582537997645 seconds
 ------------------------------
 Generation: 3
 
-Best: 1.96017632715 seconds
-Worst: 4.62874851857 seconds
-Average: 3.28946314016 seconds
-Standard Deviation: 0.587075841699 seconds
+Best: 1.8695297529 seconds
+Worst: 4.39781339341 seconds
+Average: 3.26347073111 seconds
+Standard Deviation: 0.573427259099 seconds
 ------------------------------
 Generation: 4
 
-Best: 1.89991699495 seconds
-Worst: 4.46281496113 seconds
-Average: 3.23923211101 seconds
-Standard Deviation: 0.585983475574 seconds
+Best: 1.8901623849 seconds
+Worst: 4.32868930841 seconds
+Average: 3.22764766101 seconds
+Standard Deviation: 0.567356584465 seconds
 ------------------------------
 Generation: 5
 
-Best: 1.83833401254 seconds
-Worst: 4.28068552312 seconds
-Average: 3.19378996881 seconds
-Standard Deviation: 0.591766991936 seconds
+Best: 1.86909768294 seconds
+Worst: 4.24636765449 seconds
+Average: 3.19094317383 seconds
+Standard Deviation: 0.55851934477 seconds
 ------------------------------
 Generation: 6
 
-Best: 1.85564297713 seconds
-Worst: 4.219052335 seconds
-Average: 3.15368975325 seconds
-Standard Deviation: 0.58926928911 seconds
+Best: 1.82403019337 seconds
+Worst: 4.16867609121 seconds
+Average: 3.14833983803 seconds
+Standard Deviation: 0.562057625578 seconds
 ------------------------------
 Generation: 7
 
-Best: 1.8256621471 seconds
-Worst: 4.15732215963 seconds
-Average: 3.11164463225 seconds
-Standard Deviation: 0.589170906711 seconds
+Best: 1.83772690411 seconds
+Worst: 4.13148161065 seconds
+Average: 3.10294103348 seconds
+Standard Deviation: 0.569134968332 seconds
 ------------------------------
 Generation: 8
 
-Best: 1.86538670088 seconds
-Worst: 4.09390891515 seconds
-Average: 3.07298690694 seconds
-Standard Deviation: 0.585925142926 seconds
+Best: 1.85231222646 seconds
+Worst: 4.06226854532 seconds
+Average: 3.06513390957 seconds
+Standard Deviation: 0.569319656284 seconds
 ------------------------------
 Generation: 9
 
-Best: 1.84698389458 seconds
-Worst: 4.05046758112 seconds
-Average: 3.03384544047 seconds
-Standard Deviation: 0.584121845979 seconds
+Best: 1.84622830001 seconds
+Worst: 3.98778744044 seconds
+Average: 3.02184450325 seconds
+Standard Deviation: 0.577232515325 seconds
 ------------------------------
 Generation: 10
 
-Best: 1.85018376775 seconds
-Worst: 3.96328333255 seconds
-Average: 2.99294095078 seconds
-Standard Deviation: 0.586739660982 seconds
+Best: 1.83681494586 seconds
+Worst: 3.91942548366 seconds
+Average: 2.98107743493 seconds
+Standard Deviation: 0.580443532349 seconds
 ------------------------------
 Generation: 11
 
-Best: 1.81334433899 seconds
-Worst: 3.86875002033 seconds
-Average: 2.95084107124 seconds
-Standard Deviation: 0.593247437577 seconds
+Best: 1.83396107691 seconds
+Worst: 3.83753052308 seconds
+Average: 2.93968942475 seconds
+Standard Deviation: 0.586787567964 seconds
 ------------------------------
 Generation: 12
 
-Best: 1.82569367589 seconds
-Worst: 3.80553026143 seconds
-Average: 2.91361670704 seconds
-Standard Deviation: 0.59473293494 seconds
+Best: 1.8142925434 seconds
+Worst: 3.78639338998 seconds
+Average: 2.90006265056 seconds
+Standard Deviation: 0.592942328126 seconds
 ------------------------------
 Generation: 13
 
-Best: 1.80135635242 seconds
-Worst: 3.75059469186 seconds
-Average: 2.87476941945 seconds
-Standard Deviation: 0.600443216561 seconds
+Best: 1.7954199295 seconds
+Worst: 3.74741138767 seconds
+Average: 2.86104416001 seconds
+Standard Deviation: 0.598311480397 seconds
 ------------------------------
 Generation: 14
 
-Best: 1.79805298387 seconds
-Worst: 3.73759494809 seconds
-Average: 2.83709649839 seconds
-Standard Deviation: 0.604081905944 seconds
+Best: 1.81258615718 seconds
+Worst: 3.71891605588 seconds
+Average: 2.8233991558 seconds
+Standard Deviation: 0.601340048026 seconds
 ------------------------------
 Generation: 15
 
-Best: 1.80004599252 seconds
-Worst: 3.68846284767 seconds
-Average: 2.79891954211 seconds
-Standard Deviation: 0.607525102296 seconds
+Best: 1.79384761067 seconds
+Worst: 3.6859068559 seconds
+Average: 2.78545043139 seconds
+Standard Deviation: 0.604407849438 seconds
 ------------------------------
 Generation: 16
 
-Best: 1.79915502476 seconds
-Worst: 3.66264284634 seconds
-Average: 2.76165510024 seconds
-Standard Deviation: 0.609724427664 seconds
+Best: 1.79384761067 seconds
+Worst: 3.65898790809 seconds
+Average: 2.74788581599 seconds
+Standard Deviation: 0.606141889371 seconds
 ------------------------------
 Generation: 17
 
-Best: 1.79823341065 seconds
-Worst: 3.63600241347 seconds
-Average: 2.72498841766 seconds
-Standard Deviation: 0.610028831745 seconds
+Best: 1.79366112478 seconds
+Worst: 3.61600208871 seconds
+Average: 2.71092406905 seconds
+Standard Deviation: 0.60679729188 seconds
 ------------------------------
 Generation: 18
 
-Best: 1.79306312712 seconds
-Worst: 3.59855258932 seconds
-Average: 2.68863333273 seconds
-Standard Deviation: 0.609891147104 seconds
+Best: 1.79384761067 seconds
+Worst: 3.56751102492 seconds
+Average: 2.67486763438 seconds
+Standard Deviation: 0.606514860744 seconds
 ------------------------------
 Generation: 19
 
-Best: 1.79306312712 seconds
-Worst: 3.56922339223 seconds
-Average: 2.65288663447 seconds
-Standard Deviation: 0.608619987948 seconds
+Best: 1.79366112478 seconds
+Worst: 3.53238377649 seconds
+Average: 2.63981360449 seconds
+Standard Deviation: 0.605393594337 seconds
 ------------------------------
 Generation: 20
 
-Best: 1.79306312712 seconds
-Worst: 3.54209603431 seconds
-Average: 2.6175646 seconds
-Standard Deviation: 0.60632038646 seconds
+Best: 1.79322905481 seconds
+Worst: 3.51510352439 seconds
+Average: 2.60526883865 seconds
+Standard Deviation: 0.603130717222 seconds
 ------------------------------
 Generation: 21
 
-Best: 1.79286825119 seconds
-Worst: 3.51557666721 seconds
-Average: 2.58289178701 seconds
-Standard Deviation: 0.602586541048 seconds
+Best: 1.79322905481 seconds
+Worst: 3.4727150174 seconds
+Average: 2.57123713382 seconds
+Standard Deviation: 0.60002391721 seconds
 ------------------------------
 Generation: 22
 
-Best: 1.79286825119 seconds
-Worst: 3.49103191619 seconds
-Average: 2.54869585555 seconds
-Standard Deviation: 0.597643629547 seconds
+Best: 1.79322905481 seconds
+Worst: 3.44227743944 seconds
+Average: 2.53810655621 seconds
+Standard Deviation: 0.596056137548 seconds
 ------------------------------
 Generation: 23
 
-Best: 1.79286825119 seconds
-Worst: 3.46608685907 seconds
-Average: 2.51489608265 seconds
-Standard Deviation: 0.591768292831 seconds
+Best: 1.79322905481 seconds
+Worst: 3.39380078419 seconds
+Average: 2.50556971288 seconds
+Standard Deviation: 0.591426802266 seconds
 ------------------------------
 Generation: 24
 
-Best: 1.79286825119 seconds
-Worst: 3.43871271156 seconds
-Average: 2.48167060473 seconds
-Standard Deviation: 0.584554783153 seconds
+Best: 1.79322905481 seconds
+Worst: 3.37003836319 seconds
+Average: 2.47377538199 seconds
+Standard Deviation: 0.585990019578 seconds
 ------------------------------
 Generation: 25
 
-Best: 1.7925288929 seconds
-Worst: 3.41164577583 seconds
-Average: 2.44899240587 seconds
-Standard Deviation: 0.5764283495 seconds
+Best: 1.79317704005 seconds
+Worst: 3.33389021525 seconds
+Average: 2.44246694141 seconds
+Standard Deviation: 0.57963805439 seconds
 ------------------------------
 Generation: 26
 
-Best: 1.79233401697 seconds
-Worst: 3.3767334621 seconds
-Average: 2.41709284032 seconds
-Standard Deviation: 0.567225906365 seconds
+Best: 1.79317704005 seconds
+Worst: 3.30067880385 seconds
+Average: 2.41193886553 seconds
+Standard Deviation: 0.572576567669 seconds
 ------------------------------
 Generation: 27
 
-Best: 1.79233401697 seconds
-Worst: 3.3412473647 seconds
-Average: 2.38572664797 seconds
-Standard Deviation: 0.557513240956 seconds
+Best: 1.79317704005 seconds
+Worst: 3.27614525414 seconds
+Average: 2.38207047141 seconds
+Standard Deviation: 0.565035620696 seconds
 ------------------------------
 Generation: 28
 
-Best: 1.79233401697 seconds
-Worst: 3.31295920793 seconds
-Average: 2.35504516457 seconds
-Standard Deviation: 0.547052253469 seconds
+Best: 1.79317704005 seconds
+Worst: 3.2554572829 seconds
+Average: 2.35260466367 seconds
+Standard Deviation: 0.556481350724 seconds
 ------------------------------
 Generation: 29
 
-Best: 1.79233401697 seconds
-Worst: 3.27704295333 seconds
-Average: 2.32494413375 seconds
-Standard Deviation: 0.535620470114 seconds
+Best: 1.79317704005 seconds
+Worst: 3.23247426759 seconds
+Average: 2.32354019354 seconds
+Standard Deviation: 0.5468887889 seconds
 ------------------------------
 Generation: 30
 
-Best: 1.79233401697 seconds
-Worst: 3.22752754828 seconds
-Average: 2.29564203596 seconds
-Standard Deviation: 0.523725130514 seconds
+Best: 1.79317704005 seconds
+Worst: 3.21660998042 seconds
+Average: 2.29485287617 seconds
+Standard Deviation: 0.536280195649 seconds
 ------------------------------
 Generation: 31
 
-Best: 1.79233401697 seconds
-Worst: 3.16509771078 seconds
-Average: 2.26751177874 seconds
-Standard Deviation: 0.512066674692 seconds
+Best: 1.79317704005 seconds
+Worst: 3.19450947609 seconds
+Average: 2.26661362132 seconds
+Standard Deviation: 0.524627886061 seconds
 ------------------------------
 Generation: 32
 
-Best: 1.79233401697 seconds
-Worst: 3.13690302453 seconds
-Average: 2.24036982937 seconds
-Standard Deviation: 0.500410591689 seconds
+Best: 1.79317704005 seconds
+Worst: 3.17110367356 seconds
+Average: 2.23879833908 seconds
+Standard Deviation: 0.511944272529 seconds
 ------------------------------
 Generation: 33
 
-Best: 1.79233401697 seconds
-Worst: 3.11688464012 seconds
-Average: 2.21369157338 seconds
-Standard Deviation: 0.487845073277 seconds
+Best: 1.79317704005 seconds
+Worst: 3.15080695811 seconds
+Average: 2.21145105799 seconds
+Standard Deviation: 0.498287247367 seconds
 ------------------------------
 Generation: 34
 
-Best: 1.79233401697 seconds
-Worst: 3.08202523263 seconds
-Average: 2.18744894076 seconds
-Standard Deviation: 0.474278911053 seconds
+Best: 1.79317704005 seconds
+Worst: 3.11618874483 seconds
+Average: 2.18454742591 seconds
+Standard Deviation: 0.483582213271 seconds
 ------------------------------
 Generation: 35
 
-Best: 1.79233401697 seconds
-Worst: 3.06805325261 seconds
-Average: 2.161779368 seconds
-Standard Deviation: 0.459992365143 seconds
+Best: 1.79317704005 seconds
+Worst: 3.07940598719 seconds
+Average: 2.15845501248 seconds
+Standard Deviation: 0.46853290585 seconds
 ------------------------------
 Generation: 36
 
-Best: 1.79233401697 seconds
-Worst: 3.04861106487 seconds
-Average: 2.13642920166 seconds
-Standard Deviation: 0.444433320608 seconds
+Best: 1.79317704005 seconds
+Worst: 3.05607466274 seconds
+Average: 2.13290809337 seconds
+Standard Deviation: 0.45262752083 seconds
 ------------------------------
 Generation: 37
 
-Best: 1.79233401697 seconds
-Worst: 3.02112889466 seconds
-Average: 2.11152845698 seconds
-Standard Deviation: 0.427789761925 seconds
+Best: 1.79317704005 seconds
+Worst: 3.04142491942 seconds
+Average: 2.10777509093 seconds
+Standard Deviation: 0.4355489373 seconds
 ------------------------------
 Generation: 38
 
-Best: 1.79233401697 seconds
-Worst: 2.99870882504 seconds
-Average: 2.08717158591 seconds
-Standard Deviation: 0.410203040746 seconds
+Best: 1.79317704005 seconds
+Worst: 3.01115834291 seconds
+Average: 2.0831479023 seconds
+Standard Deviation: 0.417413893906 seconds
 ------------------------------
 Generation: 39
 
-Best: 1.79233401697 seconds
-Worst: 2.97424896797 seconds
-Average: 2.06324630308 seconds
-Standard Deviation: 0.391344123887 seconds
+Best: 1.79317704005 seconds
+Worst: 2.9895508219 seconds
+Average: 2.05899043788 seconds
+Standard Deviation: 0.398056836825 seconds
 ------------------------------
 Generation: 40
 
-Best: 1.79233401697 seconds
-Worst: 2.94592957766 seconds
-Average: 2.03986586687 seconds
-Standard Deviation: 0.371358428783 seconds
+Best: 1.79317704005 seconds
+Worst: 2.95570103626 seconds
+Average: 2.03534064814 seconds
+Standard Deviation: 0.377442928124 seconds
 ------------------------------
 Generation: 41
 
-Best: 1.79233401697 seconds
-Worst: 2.91504978824 seconds
-Average: 2.01704612571 seconds
-Standard Deviation: 0.350164111839 seconds
+Best: 1.79317704005 seconds
+Worst: 2.93312029151 seconds
+Average: 2.01236271914 seconds
+Standard Deviation: 0.355853896958 seconds
 ------------------------------
 Generation: 42
 
-Best: 1.79233401697 seconds
-Worst: 2.88119985514 seconds
-Average: 1.99485586662 seconds
-Standard Deviation: 0.327784191307 seconds
+Best: 1.79317704005 seconds
+Worst: 2.90331800901 seconds
+Average: 1.9898704152 seconds
+Standard Deviation: 0.332650925849 seconds
 ------------------------------
 Generation: 43
 
-Best: 1.79233401697 seconds
-Worst: 2.85092877133 seconds
-Average: 1.97327410219 seconds
-Standard Deviation: 0.303971196429 seconds
+Best: 1.79317704005 seconds
+Worst: 2.8834350482 seconds
+Average: 1.9678250837 seconds
+Standard Deviation: 0.307424710013 seconds
 ------------------------------
 Generation: 44
 
-Best: 1.79233401697 seconds
-Worst: 2.83165038142 seconds
-Average: 1.95226721513 seconds
-Standard Deviation: 0.278323862447 seconds
+Best: 1.79317704005 seconds
+Worst: 2.83441791704 seconds
+Average: 1.94658545532 seconds
+Standard Deviation: 0.280862803945 seconds
 ------------------------------
 Generation: 45
 
-Best: 1.79233401697 seconds
-Worst: 2.78442872999 seconds
-Average: 1.93181564553 seconds
-Standard Deviation: 0.250285052642 seconds
+Best: 1.79317704005 seconds
+Worst: 2.79685662475 seconds
+Average: 1.92611670637 seconds
+Standard Deviation: 0.252512272563 seconds
 ------------------------------
 Generation: 46
 
-Best: 1.79233401697 seconds
-Worst: 2.68341182442 seconds
-Average: 1.91287741168 seconds
-Standard Deviation: 0.222676624601 seconds
+Best: 1.79317704005 seconds
+Worst: 2.72864098583 seconds
+Average: 1.90657357161 seconds
+Standard Deviation: 0.222369367184 seconds
 ------------------------------
 Generation: 47
 
-Best: 1.79233401697 seconds
-Worst: 2.64438465915 seconds
-Average: 1.89549756205 seconds
-Standard Deviation: 0.195818456775 seconds
+Best: 1.79317704005 seconds
+Worst: 2.63987576081 seconds
+Average: 1.88866368295 seconds
+Standard Deviation: 0.192633184755 seconds
 ------------------------------
 Generation: 48
 
-Best: 1.79233401697 seconds
-Worst: 2.52574957596 seconds
-Average: 1.87996531635 seconds
-Standard Deviation: 0.170887094771 seconds
+Best: 1.79317704005 seconds
+Worst: 2.5287389142 seconds
+Average: 1.87282578174 seconds
+Standard Deviation: 0.16522092219 seconds
 ------------------------------
 Generation: 49
 
-Best: 1.79233401697 seconds
-Worst: 2.4438374541 seconds
-Average: 1.86588050624 seconds
-Standard Deviation: 0.146729550089 seconds
+Best: 1.79317704005 seconds
+Worst: 2.41080452872 seconds
+Average: 1.8590421059 seconds
+Standard Deviation: 0.140597594283 seconds
 ------------------------------
 Generation: 50
 
-Best: 1.79233401697 seconds
-Worst: 2.37935648278 seconds
-Average: 1.85372223004 seconds
-Standard Deviation: 0.125540153972 seconds
+Best: 1.79317704005 seconds
+Worst: 2.3625506887 seconds
+Average: 1.84706594358 seconds
+Standard Deviation: 0.118381672899 seconds
 ------------------------------
 Generation: 51
 
-Best: 1.79233401697 seconds
-Worst: 2.29578012576 seconds
-Average: 1.84250738154 seconds
-Standard Deviation: 0.103467414322 seconds
+Best: 1.79317704005 seconds
+Worst: 2.25809936761 seconds
+Average: 1.83668800707 seconds
+Standard Deviation: 0.0980189970153 seconds
 ------------------------------
 Generation: 52
 
-Best: 1.79233401697 seconds
-Worst: 2.20636009303 seconds
-Average: 1.83322307283 seconds
-Standard Deviation: 0.0849880084929 seconds
+Best: 1.79317704005 seconds
+Worst: 2.19309613658 seconds
+Average: 1.82786245627 seconds
+Standard Deviation: 0.0799570853053 seconds
 ------------------------------
 Generation: 53
 
-Best: 1.79233401697 seconds
-Worst: 2.13407224512 seconds
-Average: 1.82560585022 seconds
-Standard Deviation: 0.0698108241758 seconds
+Best: 1.79317704005 seconds
+Worst: 2.12008565172 seconds
+Average: 1.82053091452 seconds
+Standard Deviation: 0.0643810663389 seconds
 ------------------------------
 Generation: 54
 
-Best: 1.79233401697 seconds
-Worst: 2.07350958645 seconds
-Average: 1.81930855744 seconds
-Standard Deviation: 0.0571120551055 seconds
+Best: 1.79317704005 seconds
+Worst: 2.08863728977 seconds
+Average: 1.81427110561 seconds
+Standard Deviation: 0.0498411603044 seconds
 ------------------------------
 Generation: 55
 
-Best: 1.79233401697 seconds
-Worst: 2.02119331787 seconds
-Average: 1.81420035362 seconds
-Standard Deviation: 0.0468794156498 seconds
+Best: 1.79317704005 seconds
+Worst: 1.98166436092 seconds
+Average: 1.80905968817 seconds
+Standard Deviation: 0.0359262169012 seconds
 ------------------------------
 Generation: 56
 
-Best: 1.79233401697 seconds
-Worst: 1.97449539452 seconds
-Average: 1.80993577022 seconds
-Standard Deviation: 0.038116098328 seconds
+Best: 1.79317704005 seconds
+Worst: 1.94039505569 seconds
+Average: 1.80555195727 seconds
+Standard Deviation: 0.0277858221447 seconds
 ------------------------------
 Generation: 57
 
-Best: 1.79233401697 seconds
-Worst: 1.93679327203 seconds
-Average: 1.80679779089 seconds
-Standard Deviation: 0.0325246096621 seconds
+Best: 1.79317704005 seconds
+Worst: 1.90790334192 seconds
+Average: 1.80297235812 seconds
+Standard Deviation: 0.0222230611658 seconds
 ------------------------------
 Generation: 58
 
-Best: 1.79233401697 seconds
-Worst: 1.91820502481 seconds
-Average: 1.80411076134 seconds
-Standard Deviation: 0.0276764873975 seconds
+Best: 1.79317704005 seconds
+Worst: 1.88181472854 seconds
+Average: 1.80098536861 seconds
+Standard Deviation: 0.0181702277931 seconds
 ------------------------------
 Generation: 59
 
-Best: 1.79233401697 seconds
-Worst: 1.90216829959 seconds
-Average: 1.80171636126 seconds
-Standard Deviation: 0.022995814583 seconds
+Best: 1.79317704005 seconds
+Worst: 1.85848600026 seconds
+Average: 1.79940604109 seconds
+Standard Deviation: 0.0150528082831 seconds
 ------------------------------
 Generation: 60
 
-Best: 1.79233401697 seconds
-Worst: 1.88304769152 seconds
-Average: 1.79961243913 seconds
-Standard Deviation: 0.0184849597598 seconds
+Best: 1.79317704005 seconds
+Worst: 1.84838754271 seconds
+Average: 1.79820229686 seconds
+Standard Deviation: 0.0129371128776 seconds
 ------------------------------
 Generation: 61
 
-Best: 1.79233401697 seconds
-Worst: 1.87592987772 seconds
-Average: 1.79784047272 seconds
-Standard Deviation: 0.0143882242033 seconds
+Best: 1.79317704005 seconds
+Worst: 1.84288177506 seconds
+Average: 1.79717345919 seconds
+Standard Deviation: 0.0111171213868 seconds
 ------------------------------
 Generation: 62
 
-Best: 1.79233401697 seconds
-Worst: 1.85525676987 seconds
-Average: 1.79640191701 seconds
-Standard Deviation: 0.0107919200296 seconds
+Best: 1.79317704005 seconds
+Worst: 1.83722869988 seconds
+Average: 1.7962173394 seconds
+Standard Deviation: 0.00918906662482 seconds
 ------------------------------
 Generation: 63
 
-Best: 1.79233401697 seconds
-Worst: 1.83419118896 seconds
-Average: 1.79532960943 seconds
-Standard Deviation: 0.00809285032019 seconds
+Best: 1.79317704005 seconds
+Worst: 1.83284848944 seconds
+Average: 1.79539164026 seconds
+Standard Deviation: 0.00738826165993 seconds
 ------------------------------
 Generation: 64
 
-Best: 1.79233401697 seconds
-Worst: 1.82577518929 seconds
-Average: 1.79454211019 seconds
-Standard Deviation: 0.0061983242987 seconds
+Best: 1.79317704005 seconds
+Worst: 1.82902905029 seconds
+Average: 1.79460448614 seconds
+Standard Deviation: 0.00513948700572 seconds
 ------------------------------
 Generation: 65
 
-Best: 1.79233401697 seconds
-Worst: 1.81936735913 seconds
-Average: 1.7939282017 seconds
-Standard Deviation: 0.00466991968114 seconds
+Best: 1.79317704005 seconds
+Worst: 1.81397199012 seconds
+Average: 1.79408241803 seconds
+Standard Deviation: 0.00369008281112 seconds
 ------------------------------
 Generation: 66
 
-Best: 1.79233401697 seconds
-Worst: 1.81252474805 seconds
-Average: 1.79346623382 seconds
-Standard Deviation: 0.00350205422654 seconds
+Best: 1.79317704005 seconds
+Worst: 1.81239967128 seconds
+Average: 1.79368724226 seconds
+Standard Deviation: 0.00251942180292 seconds
 ------------------------------
 Generation: 67
 
-Best: 1.79233401697 seconds
-Worst: 1.80618326736 seconds
-Average: 1.79311102061 seconds
-Standard Deviation: 0.00255704167638 seconds
+Best: 1.79317704005 seconds
+Worst: 1.80189789189 seconds
+Average: 1.79334809426 seconds
+Standard Deviation: 0.000763534451728 seconds
 ------------------------------
 Generation: 68
 
-Best: 1.79233401697 seconds
-Worst: 1.80395670834 seconds
-Average: 1.79285563144 seconds
-Standard Deviation: 0.00189657449794 seconds
+Best: 1.79317704005 seconds
+Worst: 1.7954199295 seconds
+Average: 1.7932541045 seconds
+Standard Deviation: 0.000270388683227 seconds
 ------------------------------
 Generation: 69
 
-Best: 1.79233401697 seconds
-Worst: 1.80158427141 seconds
-Average: 1.7926381841 seconds
-Standard Deviation: 0.00118454554883 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79384761067 seconds
+Average: 1.79322208753 seconds
+Standard Deviation: 0.000155535166044 seconds
 ------------------------------
 Generation: 70
 
-Best: 1.79233401697 seconds
-Worst: 1.79823341065 seconds
-Average: 1.79248886434 seconds
-Standard Deviation: 0.000567252733695 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79384761067 seconds
+Average: 1.79320867611 seconds
+Standard Deviation: 0.000127319918385 seconds
 ------------------------------
 Generation: 71
 
-Best: 1.79233401697 seconds
-Worst: 1.79468083306 seconds
-Average: 1.79242151241 seconds
-Standard Deviation: 0.000275905835376 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79375059233 seconds
+Average: 1.7931952647 seconds
+Standard Deviation: 8.87078490989e-05 seconds
 ------------------------------
 Generation: 72
 
-Best: 1.79233401697 seconds
-Worst: 1.79337107306 seconds
-Average: 1.79239111346 seconds
-Standard Deviation: 0.000176963295853 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79366112478 seconds
+Average: 1.79318379366 seconds
+Standard Deviation: 3.95443308037e-05 seconds
 ------------------------------
 Generation: 73
 
-Best: 1.79233401697 seconds
-Worst: 1.79303110574 seconds
-Average: 1.7923739776 seconds
-Standard Deviation: 0.000133705670157 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79322905481 seconds
+Average: 1.79318016094 seconds
+Standard Deviation: 1.23651923495e-05 seconds
 ------------------------------
 Generation: 74
 
-Best: 1.79233401697 seconds
-Worst: 1.79286825119 seconds
-Average: 1.79236296721 seconds
-Standard Deviation: 0.000111875120522 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79322905481 seconds
+Average: 1.79317912064 seconds
+Standard Deviation: 1.02029776827e-05 seconds
 ------------------------------
 Generation: 75
 
-Best: 1.79233401697 seconds
-Worst: 1.79286825119 seconds
-Average: 1.79235228253 seconds
-Standard Deviation: 8.54516019024e-05 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79322905481 seconds
+Average: 1.79317808035 seconds
+Standard Deviation: 7.28935934405e-06 seconds
 ------------------------------
 Generation: 76
 
-Best: 1.79233401697 seconds
-Worst: 1.79286825119 seconds
-Average: 1.79234159784 seconds
-Standard Deviation: 4.31175997988e-05 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 77
 
-Best: 1.79233401697 seconds
-Worst: 1.7925288929 seconds
-Average: 1.79233674523 seconds
-Standard Deviation: 2.2918986553e-05 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 78
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 79
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 80
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 81
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 82
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 83
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 84
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 85
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 86
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 87
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 88
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 89
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 90
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 91
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 92
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 93
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 94
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 95
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 96
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 97
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 98
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 99
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 100
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 101
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 102
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 103
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 104
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 105
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 106
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 107
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 108
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 109
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 110
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 111
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 112
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 113
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 114
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 115
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 116
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 117
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 118
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 119
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 120
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 121
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 122
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 123
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 124
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 125
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 126
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 127
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 128
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 129
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 130
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 131
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 132
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 133
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 134
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 135
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 136
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 137
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 138
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 139
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 140
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 141
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 142
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 143
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 144
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 145
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 146
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 147
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 148
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 149
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 150
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 151
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 152
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 153
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 154
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 155
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 156
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 157
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 158
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 159
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 160
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 161
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 162
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 163
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 164
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 165
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 166
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 167
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 168
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 169
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 170
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 171
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 172
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 173
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 174
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 175
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 176
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 177
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 178
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 179
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 180
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 181
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 182
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 183
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 184
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 185
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 186
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 187
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 188
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 189
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 190
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 191
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 192
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 193
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 194
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 195
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 196
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 197
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 198
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 199
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 200
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 201
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 202
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 203
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 204
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 205
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 206
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 207
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 208
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 209
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 210
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 211
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 212
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 213
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 214
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 215
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 216
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 217
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 218
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 219
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 220
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 221
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 222
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 223
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 224
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 225
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 226
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 227
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 228
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 229
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 230
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 231
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 232
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 233
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 234
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 235
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 236
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 237
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 238
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 239
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 240
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 241
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 242
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 243
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 244
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 245
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 246
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 247
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 248
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 249
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 250
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 251
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 252
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 253
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 254
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 255
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 256
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 257
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 258
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 259
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 260
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 261
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 262
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 263
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 264
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 265
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 266
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 267
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 268
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 269
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 270
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 271
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 272
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 273
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 274
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 275
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 276
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 277
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 278
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 279
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 280
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 281
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 282
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 283
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 284
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 285
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 286
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 287
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 288
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 289
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 290
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 291
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 292
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 293
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 294
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 295
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 296
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 297
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 298
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 299
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
 Generation: 300
 
-Best: 1.79233401697 seconds
-Worst: 1.79233401697 seconds
-Average: 1.79233401697 seconds
-Standard Deviation: 1.24469510566e-14 seconds
+Best: 1.79317704005 seconds
+Worst: 1.79317704005 seconds
+Average: 1.79317704005 seconds
+Standard Deviation: 1.40028199386e-14 seconds
 ------------------------------
