@@ -10,7 +10,20 @@ from Tkinter import *
 FILE = open("results.txt",'w')
 
 best = []
-size_gen = input("Numero de geraçoes: ")
+size_gen = 300
+size_pop = 500
+n_points = 8
+representacao = 1
+elite = 10
+pgene = 0
+prec = 0.5
+rec_points = 3
+seleccao = 2
+tsize = 20
+start = [1, 5]
+finish = [10,2]
+
+"""size_gen = input("Numero de geraçoes: ")
 size_pop = input("Tamanho da populaçao: ")
 n_points = input("Numero de pontos: ")
 
@@ -48,8 +61,7 @@ start = [int(s) for s in raw_input("Coordenadas do ponto de partida (x y): ").sp
 while 1:
 	finish = [int(s) for s in raw_input("Coordenadas do ponto de chegada (x y): ").split()]
 	if start[1]>finish[1] and start[0]<finish[0]:
-		break
-
+		break"""
 
 def create_indiv(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
@@ -120,7 +132,7 @@ def roulette(individuos):
 
 
 def mutation(individuo):
-	if seleccao==1:
+	if representacao==1:
 		for i in xrange(1,len(individuo),2):
 			if random.random() < pgene:
 				individuo[i] = random.random()*start[1]
@@ -129,8 +141,6 @@ def mutation(individuo):
 	return individuo
 
 def recnpoints(individuo1, individuo2):
-	size_i = len(individuo1[0])
-	
 	chosen = [0 for i in xrange(rec_points)]
 	num = 0
 	for i in xrange(rec_points):
@@ -146,8 +156,27 @@ def recnpoints(individuo1, individuo2):
 		if i+1<len(chosen):
 			prev = 2*chosen[i+1]
 	
-	if seleccao == 2:
-		pass
+	if representacao == 2:
+		points = [[0,0] for i in xrange(n_points)]
+		points2 = [[0,0] for i in xrange(n_points)]
+		j=0
+		for i in xrange(0,n_points*2,2):
+			points[j][0] = individuo1[0][i]
+			points[j][1] = individuo1[0][i+1]
+			points2[j][0] = individuo2[0][i]
+			points2[j][1] = individuo2[0][i+1]
+			j += 1
+		points.sort(key=itemgetter(0))
+		#print points
+		points2.sort(key=itemgetter(0))
+		#print points2
+		j=0
+		for i in xrange(0,n_points*2,2):
+			individuo1[0][i] = points[j][0]
+			individuo1[0][i+1] = points[j][1]
+			individuo2[0][i] = points2[j][0]
+			individuo2[0][i+1] = points2[j][1]
+			j += 1
 	
 	return [individuo1, individuo2]
 
@@ -169,20 +198,24 @@ def stdev(population):
 	return stdev
 
 
-def brachistochrone():
+def brachistochrone( cenas):
+
+	print "roulette " + str(seleccao)
+	print "rep " + str(representacao)
+	time.sleep(5)
 	# create initial population
 	population = create_population(size_pop)
 	
 	# evaluate population
-	population = [[indiv, fitness(start+indiv+finish)] for indiv in population]	
+	population = [[indiv[:], fitness(start+indiv+finish)] for indiv in population]	
 	population.sort(key=itemgetter(1))
 	for generation in xrange(size_gen):
 		parents = []
 		# select parents
 		if seleccao==2: # tournament
-			parents = [tournament(population, tsize) for i in xrange(size_pop)]
+			parents = [tournament(population[:], tsize) for i in xrange(size_pop)]
 		else: # roulette
-			parents = [roulette(population) for i in xrange(size_pop)]
+			parents = [roulette(population[:]) for i in xrange(size_pop)]
 
 		# produce offspring
 		offspring = []
@@ -196,20 +229,21 @@ def brachistochrone():
 
 		# mutation
 		for i in xrange(size_pop):
-			offspring[i] = mutation(offspring[i])
+			offspring[i] = mutation(offspring[i][:])
 		
 		# evaluate offspring
-		offspring2 = [[indiv[0][:], fitness(start+indiv[0]+finish)] for indiv in offspring]
+		offspring2 = [[indiv[0][:], fitness(start+indiv[0][:]+finish)] for indiv in offspring]
 		offspring2.sort(key=itemgetter(1))
 		
 		# select survivors
-		population[size_pop-elite:] = list(offspring2[:elite])
-		population.sort(key=itemgetter(1))
+		population[size_pop-elite:] = offspring2[:elite][:]
+		population = [[indiv[0][:], fitness(start+indiv[0][:]+finish)] for indiv in population]
+		population = sorted(population[:], key=itemgetter(1))
 		print population[0][0]
-		print 'fitness %f'%(population[0][1])
+		print 'fitness %lf'%(population[0][1])
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
-		FILE.write("Worst: "+str(population[size_pop-1][1])+" seconds\n")
+		FILE.write("Worst: "+str(population[-1][1])+" seconds\n")
 		FILE.write("Average: "+str(average(population))+" seconds\n")
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
@@ -219,47 +253,200 @@ def brachistochrone():
 		print population[1][0], population[1][1]
 		print population[2][0], population[2][1]
 		
-		points = []
-		points.append([start[0]*50-250,start[1]*50-50])
-		for i in xrange(0,len(population[0][0]),2):
-			points.append([population[0][0][i]*50-250, population[0][0][i+1]*50-50])
-		points.append([finish[0]*50-250, finish[1]*50-50])
-		#print points
-		clear()
-		pd()
-		for i in xrange(0,len(points)):
-			goto(points[i])
-		pu()
-		setpos(start[0]*50-250,start[1]*50-50)
-		time.sleep(0.5)
+	points = []
+	points.append([start[0]*50-250,start[1]*50-150])
+	for i in xrange(0,len(population[0][0]),2):
+		points.append([population[0][0][i]*50-250, population[0][0][i+1]*50-150])
+	points.append([finish[0]*50-250, finish[1]*50-150])
+	#print points
+	cenas.clear()
+	cenas.pu()
+	cenas.setpos(start[0]*50-250,start[1]*50-150)
+	cenas.pd()
+	for i in xrange(0,len(points)):
+		cenas.goto(points[i])
+	cenas.pu()
+	cenas.setpos(start[0]*50-250,start[1]*50-150)
+	#time.sleep(5)
 	
 	print "Best took %f seconds " %population[0][1]
 	best.append(population[0][1])
 	return True
 
-"""
-seleccao = 1
-print "\nRoleta"
-seed = random.random()*10000
-random.seed(seed)
-for i in xrange(10):
-	brachistochrone()
-print "AVERAGE: %f" %(sum(best)/10)
-seleccao = 2
-best = []
-seed = random.random()*10000
-random.seed(seed)
-print "\nTorneio"
-for i in xrange(10):
-	brachistochrone()
-print "AVERAGE: %f" %(sum(best)/10)
-"""
+class App:
 
-ht()
-winsize(600,500,100,100)
-pd()
-setpos(start[0]*50-250,start[1]*50-50)
-pu()
+	def start(self):
+		global size_gen, size_pop, n_points, representacao, elite, pgene, prec, rec_points, seleccao, tsize, start, finish
+		rt = RawTurtle(self.canvas)
+		self.canvas.delete(ALL)
+		try:
+			size_gen = int(self.gen.get())
+			size_pop = int(self.pop.get())
+			n_points = int(self.points.get())
+			representacao = self.representation.get()
+			elite = int(self.elitism.get())
+			pgene = float(self.mutation.get())
+			prec = float(self.recombination.get())
+			rec_points = int(self.recombinationPoints.get())
+			seleccao = self.sel.get()
+			tsize = int(self.tournamentSize.get())
+			start[0] = float(self.startPointX.get())
+			start[1] = float(self.startPointY.get())
+			finish[0] = float(self.finishPointX.get())
+			finish[1] = float(self.finishPointY.get())	
+			brachistochrone(rt)
+		except ValueError:
+			print "Incorrect values, please check your parameters"
+		
+		
+		
+		
+	def __init__(self, root):
+		frame = Frame(root, width=800, height=600)
+		frame.pack()
+		root.geometry("800x600+100+100")
 
-brachistochrone()
-FILE.close()
+		self.button = Button(frame, text="Quit", command=frame.quit)
+		self.button.place(w=80,h=30,x=100,y=10)
+		self.startButton = Button(frame, text="Start", command=self.start)
+		self.startButton.place(w=80,h=30,x=10,y=10)
+
+		self.genLabel = Label(frame, text="Generations:")
+		self.genLabel.place(w=100,h=30,x=55,y=50)
+
+		self.gen = StringVar()
+		self.genEntry = Entry(frame,width=20, textvariable = self.gen)
+		self.genEntry.place(w=40,h=25,x=140,y=50)
+		self.gen.set("300")       
+
+
+		self.popLabel = Label(frame, text="Population:")
+		self.popLabel.place(w=100,h=30,x=55,y=80)
+
+		self.pop = StringVar()
+		self.popEntry = Entry(frame,width=20, textvariable = self.pop)
+		self.popEntry.place(w=40,h=25,x=140,y=80)
+		self.pop.set("500")
+
+		self.pointLabel = Label(frame, text="Points:")
+		self.pointLabel.place(w=100,h=30,x=65,y=110)
+
+		self.points = StringVar()
+		self.pointEntry = Entry(frame,width=20, textvariable = self.points)
+		self.pointEntry.place(w=40,h=25,x=140,y=110)
+		self.points.set("8")
+
+
+		self.elitismLabel = Label(frame, text="Elitism:")
+		self.elitismLabel.place(w=100,h=30,x=65,y=140)
+
+		self.elitism = StringVar()
+		self.elitism.set("10")
+		self.elitismEntry = Entry(frame,width = 20, textvariable = self.elitism)
+		self.elitismEntry.place(w=40,h=25,x=140,y=140)
+
+		self.mutationLabel = Label(frame, text ="% of Mutation:")
+		self.mutationLabel.place(w=150,h=30,x=20,y=170)
+
+		self.mutation = StringVar()
+		self.mutation.set("0")
+
+		self.mutationEntry = Entry(frame,width=20, textvariable = self.mutation)
+		self.mutationEntry.place(w=40,h=25,x=140,y=170)
+
+		self.recombinationLabel = Label(frame, text ="% of Recombination:")
+		self.recombinationLabel.place(w=120,h=30,x=20,y=200)
+
+		self.recombination = StringVar()
+		self.recombination.set("0.5")
+
+		self.recombinationEntry = Entry(frame,width=20, textvariable = self.recombination)
+		self.recombinationEntry.place(w=40,h=25,x=140,y=200)
+
+		self.recombinationPointsLabel = Label(frame, text ="Points of Recombination:")
+		self.recombinationPointsLabel.place(w=140,h=30,x=0,y=230)
+
+		self.recombinationPoints = StringVar()
+		self.recombinationPoints.set("3")
+
+		self.recombinationPointsEntry = Entry(frame,width=20, textvariable = self.recombinationPoints)
+		self.recombinationPointsEntry.place(w=40,h=25,x=140,y=230)
+
+
+		self.startPointLabel = Label(frame, text = "Start Point")
+		self.startPointLabel.place(w=100,h=30,x=0,y=260)
+
+		self.startPointXLabel = Label(frame, text = "x:")
+		self.startPointXLabel.place(w=20,h=30,x=40,y= 280)
+
+		self.startPointX = StringVar()
+		self.startPointX.set("1")
+		self.startPointXEntry = Entry(frame,width=20, textvariable = self.startPointX)
+		self.startPointXEntry.place(w= 30, h=20, x=60, y=285)
+
+		self.startPointYLabel = Label(frame, text = "y:")
+		self.startPointYLabel.place(w=20,h=30,x=90,y= 280)
+
+		self.startPointY = StringVar()
+		self.startPointY.set("5")
+		self.startPointYEntry = Entry(frame,width=20, textvariable = self.startPointY)
+		self.startPointYEntry.place(w= 30, h=20, x=110, y=285)
+
+		self.finishPointLabel = Label(frame, text = "End Point")
+		self.finishPointLabel.place(w=100,h=30,x=0,y=310)
+
+		self.finishPointXLabel = Label(frame, text = "x:")
+		self.finishPointXLabel.place(w=20,h=30,x=40,y= 330)
+
+		self.finishPointX = StringVar()
+		self.finishPointX.set("10")
+		self.finishPointXEntry = Entry(frame,width=20, textvariable = self.finishPointX)
+		self.finishPointXEntry.place(w= 30, h=20, x=60, y=335)
+
+		self.finishPointYLabel = Label(frame, text = "y:")
+		self.finishPointYLabel.place(w=20,h=30,x=90,y= 330)
+
+		self.finishPointY = StringVar()
+		self.finishPointY.set("2")
+		self.finishPointYEntry = Entry(frame,width=20, textvariable = self.finishPointY)
+		self.finishPointYEntry.place(w= 30, h=20, x=110, y=335)
+
+
+		self.representationLabel = Label(frame, text="Representation:")
+		self.representationLabel.place(w=120,h=30,x=0,y=350)
+
+		representation = [("Defined points",1), ("Random points",2)]
+		self.representation = IntVar()
+		for name,value in representation:
+			Radiobutton(frame,text = name, variable = self.representation, value = value, indicatoron = 0).place(w=100,h=20,x=40,y=380+25*(value-1))
+		self.representation.set(1)
+
+		self.selectionLabel = Label(frame, text="Selection:")
+		self.selectionLabel.place(w=100,h=30,x=0,y=440)
+
+		selection = [ ("Tournament", 2), ("Roulette",1)]
+		self.sel = IntVar()
+		for name,value in selection:
+			Radiobutton(frame, text=name, variable=self.sel, value=value, indicatoron=0).place(w=100,h=20,x=40, y=470+25*(value-1))
+		self.sel.set(2)
+		
+		self.tournamentSize = StringVar()
+		self.tournamentSize.set("20")
+		self.tsizeLabel = Label(frame, text="Tournament Size:")
+		self.tsizeLabel.place(w=140, h=30, x = 20,y = 530)
+		
+		self.tsizeEntry = Entry (frame, width = 20, textvariable = self.tournamentSize)
+		self.tsizeEntry.place(w=40, h=25,x=140,y=530)
+			 
+		self.canvas = Canvas(root,width=580,height=300,bg="white")
+		self.canvas.place(w=580,h=300,x=200,y=10)	
+		
+		
+	
+root = Tk()
+root.title("Brachistochrone")
+app = App(root)
+root.mainloop()
+
+#brachistochrone()
+#FILE.close()
