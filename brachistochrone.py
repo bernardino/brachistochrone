@@ -5,6 +5,7 @@ import random, math, sys, time
 from BrachFitness import calcBrachTime as fitness
 from operator import itemgetter
 from xturtle import *
+from Tkinter import *
 
 FILE = open("results.txt",'w')
 
@@ -96,7 +97,7 @@ def create_population(size_pop):
 
 
 def tournament(individuos, tsize):
-	elements = random.sample(individuos, tsize)
+	elements = list(random.sample(individuos, tsize))
 	elements.sort(key=itemgetter(1)) # minimization
 	
 	return elements[0]
@@ -189,28 +190,30 @@ def brachistochrone():
 		# crossover
 		for i in xrange(0, size_pop,2):
 			if random.random() < prec:
-				offspring.extend(recnpoints(parents[i],parents[i+1]))
+				offspring.extend(recnpoints(parents[i][:],parents[i+1][:]))
 			else:
-				offspring.extend([parents[i],parents[i+1]])
+				offspring.extend([parents[i][:],parents[i+1][:]])
 
 		# mutation
 		for i in xrange(size_pop):
 			offspring[i] = mutation(offspring[i])
 		
 		# evaluate offspring
-		offspring2 = [[indiv[0], fitness(start+indiv[0]+finish)] for indiv in offspring]
+		offspring2 = [[indiv[0][:], fitness(start+indiv[0]+finish)] for indiv in offspring]
 		offspring2.sort(key=itemgetter(1))
-
+		
 		# select survivors
-		population[size_pop-elite:] = offspring2[:elite]
+		population[size_pop-elite:] = list(offspring2[:elite])
 		population.sort(key=itemgetter(1))
+		print population[0][0]
+		print 'fitness %f'%(population[0][1])
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
 		FILE.write("Worst: "+str(population[size_pop-1][1])+" seconds\n")
 		FILE.write("Average: "+str(average(population))+" seconds\n")
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
-		
+
 		print str(generation)+"\n"
 		print population[0][0], population[0][1]
 		print population[1][0], population[1][1]
@@ -251,9 +254,12 @@ for i in xrange(10):
 	brachistochrone()
 print "AVERAGE: %f" %(sum(best)/10)
 """
+
+ht()
 winsize(600,500,100,100)
 pd()
 setpos(start[0]*50-250,start[1]*50-50)
 pu()
+
 brachistochrone()
 FILE.close()
