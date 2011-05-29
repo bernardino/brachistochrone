@@ -8,14 +8,14 @@ from xturtle import *
 from Tkinter import *
 
 FILE = open("results.txt",'w')
-
+outputxt = open("output.txt",'w')
 best = []
 size_gen = 300
 size_pop = 500
 n_points = 8
 representacao = 1
 elite = 10
-pgene = 0
+pgene = 0.01
 prec = 0.5
 rec_points = 3
 seleccao = 2
@@ -66,10 +66,11 @@ while 1:
 def create_indiv(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
 	step = float(finish[0]-start[0])/(npoints+2)
+	deltaX = float(finish[0]-start[0])/2
 	j=1
 	for i in xrange(0,npoints*2,2):
 		indiv[i] = start[0]+ j*step
-		indiv[i+1] = random.random()*start[1] # menor que o Y inicial
+		indiv[i+1] = random.uniform(finish[1]-deltaX/2, start[1]) # menor que o Y inicial
 		j+=1
 	return indiv
 
@@ -78,18 +79,18 @@ def create_indiv(npoints):
 def create_indiv_2(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
 	num = 0.0
-	dist = finish[0]-start[0]
+	dist = float(finish[0]-start[0])
 	x = [0.0 for i in xrange(npoints)]
 	for i in xrange(npoints):
 		while num in x:
-			num = random.random()*float(dist)
+			num = random.random()*dist
 		x[i] = num
 	
 	x.sort()
 	
 	j=0
 	for i in xrange(0,npoints*2,2):
-		indiv[i+1] = random.random()*start[1] # menor que o Y inicial
+		indiv[i+1] = random.uniform(finish[1]-dist/2, start[1]) # menor que o Y inicial
 		indiv[i] = x[j]+start[0]
 		j += 1
 	
@@ -109,33 +110,32 @@ def create_population(size_pop):
 
 
 def tournament(individuos, tsize):
-	elements = list(random.sample(individuos, tsize))
+	#print id(individuos)
+	elements = random.sample(individuos, tsize)[:]
+	for i in xrange(tsize):
+		elements[i] = elements[i][:]
 	elements.sort(key=itemgetter(1)) # minimization
-	
-	return elements[0]
+	aux = [[],0]
+	aux[0].extend(elements[0][0])
+	aux[1] = elements[0][1]
+	return aux
 
 
-def roulette(individuos):
-	sumfitness = 0.0
-	for i in individuos:
-		sumfitness += 1/i[1]
-	
-	probability = [0 for i in xrange(len(individuos))]
-	sumprob = 0.0
-	for i in xrange(len(individuos)):
-		probability[i] = sumprob + ((1/individuos[i][1]) / sumfitness)
-		sumprob += probability[i]
-	
+def roulette(individuos, probability):
 	for i in xrange(len(individuos)):
 		if random.random() <= probability[i]:
-			return individuos[i]	
+			aux = [[],0]
+			aux[0].extend(individuos[0][0])
+			aux[1] = individuos[0][1]
+			return aux
 
 
 def mutation(individuo):
+	dist = float(finish[0]-start[0])
 	if representacao==1:
 		for i in xrange(1,len(individuo[0]),2):
 			if random.random() < pgene:
-				individuo[0][i] = random.random()*start[1]
+				individuo[0][i] = random.uniform(finish[1]-dist/2, start[1])
 	else:
 		prev = start[0]
 		dif=0
@@ -146,11 +146,11 @@ def mutation(individuo):
 				else:
 					dif = individuo[0][i+2]-prev
 				
-				individuo[0][i] = prev+random.random()*dif
-				individuo[0][i+1] = random.random()*start[1]
+				individuo[0][i] = prev+random.random()*dif/2+dif/5
+				individuo[0][i+1] = random.uniform(finish[1]-dist/2, start[1])
 			prev = individuo[0][i]
 	
-	return individuo
+	return individuo[:]
 
 def recnpoints(individuo1, individuo2):
 	chosen = [0 for i in xrange(rec_points)]
@@ -172,25 +172,43 @@ def recnpoints(individuo1, individuo2):
 		points = [[0,0] for i in xrange(n_points)]
 		points2 = [[0,0] for i in xrange(n_points)]
 		j=0
+		prev = 0
+		prev2 = 0
 		for i in xrange(0,n_points*2,2):
 			points[j][0] = individuo1[0][i]
 			points[j][1] = individuo1[0][i+1]
 			points2[j][0] = individuo2[0][i]
 			points2[j][1] = individuo2[0][i+1]
+			
+			if prev == points[j][0]:
+				points[j][0] += 0.0000001
+			if prev2 == points2[j][0]:
+				points2[j][0] += 0.0000001
+			
+			prev = points[j][0]
+			prev2 = points2[j][0]
 			j += 1
-
+		
 		points.sort(key=itemgetter(0))
 		points2.sort(key=itemgetter(0))
-
+		
 		j=0
+		prev = 0
+		prev2 = 0
 		for i in xrange(0,n_points*2,2):
 			individuo1[0][i] = points[j][0]
 			individuo1[0][i+1] = points[j][1]
 			individuo2[0][i] = points2[j][0]
 			individuo2[0][i+1] = points2[j][1]
+			if prev == points[j][0]:
+				individuo1[0][i] += 0.0000001
+			if prev2 == points2[j][0]:
+				individuo2[0][i] += 0.0000001
+			prev = individuo1[0][i]
+			prev2 = individuo2[0][i]
 			j += 1
 	
-	return [individuo1, individuo2]
+	return [individuo1[:], individuo2[:]]
 
 def average(population):
 	soma = 0.0
@@ -211,12 +229,11 @@ def stdev(population):
 
 
 def brachistochrone( cenas):
-
 	# create initial population
 	population = create_population(size_pop)
 	
 	# evaluate population
-	population = [[indiv[:], fitness(start+indiv+finish)] for indiv in population]	
+	population = [[indiv[:], fitness(start+indiv[:]+finish)] for indiv in population]	
 	population.sort(key=itemgetter(1))
 	for generation in xrange(size_gen):
 		parents = []
@@ -224,18 +241,27 @@ def brachistochrone( cenas):
 		if seleccao==2: # tournament
 			parents = [tournament(population[:], tsize) for i in xrange(size_pop)]
 		else: # roulette
-			parents = [roulette(population[:]) for i in xrange(size_pop)]
-
+			sumfitness = 0.0
+			for i in population:
+				sumfitness += 1/i[1]
+			
+			probability = [0 for i in xrange(size_pop)]
+			sumprob = 0.0
+			for i in xrange(size_pop):
+				probability[i] = sumprob + ((1/population[i][1]) / sumfitness)
+				sumprob += probability[i]
+			parents = [roulette(population[:], probability) for i in xrange(size_pop)]
+		
 		# produce offspring
 		offspring = []
-
+		
 		# crossover
 		for i in xrange(0, size_pop,2):
 			if random.random() < prec:
 				offspring.extend(recnpoints(parents[i][:],parents[i+1][:]))
 			else:
 				offspring.extend([parents[i][:],parents[i+1][:]])
-
+				
 		# mutation
 		for i in xrange(size_pop):
 			offspring[i] = mutation(offspring[i][:])
@@ -245,22 +271,23 @@ def brachistochrone( cenas):
 		offspring2.sort(key=itemgetter(1))
 		
 		# select survivors
-		population[size_pop-elite:] = offspring2[:elite][:]
-		population = [[indiv[0][:], fitness(start+indiv[0][:]+finish)] for indiv in population]
-		population = sorted(population[:], key=itemgetter(1))
-		print population[0][0]
-		print 'fitness %lf'%(population[0][1])
+		for i in xrange(elite):
+			population[size_pop-i-1] = offspring2[i][:]
+		#population[size_pop-elite:] = offspring2[:elite]
+		population2 = [[indiv[0][:], fitness(start+indiv[0][:]+finish)] for indiv in population]
+		population = sorted(population2[:], key=itemgetter(1))
+		#print population[0][0]
+		#print 'fitness %lf'%(population[0][1])
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
 		FILE.write("Worst: "+str(population[-1][1])+" seconds\n")
 		FILE.write("Average: "+str(average(population))+" seconds\n")
 		FILE.write("Standard Deviation: "+str(stdev(population))+" seconds\n")
 		FILE.write("-"*30+"\n")
-
+		
+		
 		print str(generation)+"\n"
-		print population[0][0], population[0][1]
-		print population[1][0], population[1][1]
-		print population[2][0], population[2][1]
+		
 		
 	points = []
 	points.append([start[0]*50-250,start[1]*50-150])
@@ -293,8 +320,10 @@ class App:
 			size_pop = int(self.pop.get())
 			n_points = int(self.points.get())
 			representacao = self.representation.get()
+			print representacao
 			elite = int(self.elitism.get())
 			pgene = float(self.mutation.get())
+			print pgene
 			prec = float(self.recombination.get())
 			rec_points = int(self.recombinationPoints.get())
 			seleccao = self.sel.get()
@@ -358,7 +387,7 @@ class App:
 		self.mutationLabel.place(w=150,h=30,x=20,y=170)
 
 		self.mutation = StringVar()
-		self.mutation.set("0")
+		self.mutation.set("0.01")
 
 		self.mutationEntry = Entry(frame,width=20, textvariable = self.mutation)
 		self.mutationEntry.place(w=40,h=25,x=140,y=170)
