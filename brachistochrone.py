@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import random, math, sys, time
+import random, math, sys, time, csv
 from BrachFitness import calcBrachTime as fitness
 from operator import itemgetter
 from xturtle import *
 from Tkinter import *
+
+spamWriter = csv.writer(open('results.csv', 'wb'))
+#spamWriter.writerow(('Title 1','Title 1','Title 1'))
+#spamWriter.writerow(['Spam Spam', 'Lovely Spam', 'Wonderful Spam'])
 
 FILE = open("results.txt",'w')
 outputxt = open("output.txt",'w')
@@ -312,6 +316,7 @@ def brachistochrone( cenas):
 class App:
 
 	def start(self):
+		self.startButton.configure(state=DISABLED)
 		global size_gen, size_pop, n_points, representacao, elite, pgene, prec, rec_points, seleccao, tsize, start, finish
 		rt = RawTurtle(self.canvas)
 		self.canvas.delete(ALL)
@@ -320,10 +325,8 @@ class App:
 			size_pop = int(self.pop.get())
 			n_points = int(self.points.get())
 			representacao = self.representation.get()
-			print representacao
 			elite = int(self.elitism.get())
 			pgene = float(self.mutation.get())
-			print pgene
 			prec = float(self.recombination.get())
 			rec_points = int(self.recombinationPoints.get())
 			seleccao = self.sel.get()
@@ -331,9 +334,12 @@ class App:
 			start[0] = float(self.startPointX.get())
 			start[1] = float(self.startPointY.get())
 			finish[0] = float(self.finishPointX.get())
-			finish[1] = float(self.finishPointY.get())	
+			finish[1] = float(self.finishPointY.get())
+			random.seed(random.randint(0,10000))
 			brachistochrone(rt)
+			self.startButton.configure(state=NORMAL)
 		except ValueError:
+			self.startButton.configure(state=NORMAL)
 			print "Incorrect values, please check your parameters"
 		
 		
@@ -476,8 +482,8 @@ class App:
 		self.tsizeEntry = Entry (frame, width = 20, textvariable = self.tournamentSize)
 		self.tsizeEntry.place(w=40, h=25,x=140,y=530)
 			 
-		self.canvas = Canvas(root,width=580,height=300,bg="white")
-		self.canvas.place(w=580,h=300,x=200,y=10)	
+		self.canvas = Canvas(root,width=580,height=500,bg="white")
+		self.canvas.place(w=580,h=500,x=200,y=10)	
 		
 		
 	
