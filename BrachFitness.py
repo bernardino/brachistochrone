@@ -36,10 +36,12 @@ def calcBrachTime(indiv, debug = False):
 	
 	for i in range(2, len(indiv), 2):
 		#Consistency checking. This wasn't done in a separate function for quickness
-		if(indiv[i] <= x_i):
-			return -1
+		if(float(indiv[i]) <= float(x_i)):
+			print 'excepcao X: %f %f' %(indiv[i], x_i)
+			return ()
 		if(indiv[i+1] >= maxHeight):
-			return -1
+			print 'maxHeight'
+			return ()
 		
 		#Calculate accelaration based on segment slope. Open question - would be using cos() faster?
 		#Since the angle had to be calculated beforehand, I don't think so
@@ -53,7 +55,8 @@ def calcBrachTime(indiv, debug = False):
 		#If speed is less than 0, forget about it. This actually never happens thanks to our checks.
 		#But you never know what magic lies in wait...
 		if(v_j < 0.0):
-			return -1
+			print 'velocidade'
+			return ()
 		dv = v_j - v_i
 		
 		#The speed variation over the acceleration gives us the time. Voila
