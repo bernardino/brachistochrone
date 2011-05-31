@@ -234,35 +234,38 @@ def stdev(population):
 	return stdev
 
 def brachistochroneReal(x0, y0, x1, y1, n):
-    dy = y0 - y1
-    prec=10.0**-12
+	dy = y0 - y1
+	prec=10.0**-12
+	
+	t1=0.0
+	t2=2*pi
+	
+	xm=x0
+	while abs(xm-x1) > prec:
+		tm = (t1+t2)/2
+		
+		if (1-cos(tm)==0):
+			continue
+		
+		rm = dy / (1 - cos(tm))
+		xm = x0 + rm * (tm - sin(tm))
+		
+		if (xm > x1):
+			#pag 258
+			t2 = tm
+		else:
+			t1 = tm
+	
+	L = []
+	L2 = []
+	r=rm
+	for i in xrange(n+1):
+		t=tm*i/n
+		L.append ( [(x0+r*(t-sin(t)))*50-250, (y0-r*(1-cos(t)))*50-150] )
+		L2.extend ( [x0+r*(t-sin(t)), y0-r*(1-cos(t))] )
+	
+	return L, L2
 
-    t1=0.0
-    t2=2*pi
-
-    xm=x0
-    while abs(xm-x1) > prec:
-        tm = (t1+t2)/2
-
-        if (1-cos(tm)==0):
-            continue
-
-        rm = dy / (1 - cos(tm))
-        xm = x0 + rm * (tm - sin(tm))
-
-        if (xm > x1):
-            #pag 258
-            t2 = tm
-        else:
-            t1 = tm
-
-    L=[]
-    r=rm
-    for i in xrange(n+1):
-        t=tm*i/n
-        L.append ( [(x0+r*(t-sin(t)))*50-250, (y0-r*(1-cos(t)))*50-150] )
-
-    return L
 
 def brachistochrone( cenas):
 	# create initial population
@@ -275,6 +278,8 @@ def brachistochrone( cenas):
 		parents = []
 		# select parents
 		if seleccao==2: # tournament
+			for i in xrange(size_pop):
+				parents.extend([tournament(population[:],tsize)])
 			parents = [tournament(population[:], tsize) for i in xrange(size_pop)]
 		else: # roulette
 			sumfitness = 0.0
@@ -284,7 +289,7 @@ def brachistochrone( cenas):
 			probability = [0 for i in xrange(size_pop)]
 			sumprob = 0.0
 			for i in xrange(size_pop):
-				probability[i] = sumprob + ((1/population[i][1]) / sumfitness)
+				probability[i] = sumprob + float((1.0/population[i][1]) / sumfitness)
 				sumprob += probability[i]
 			parents = [roulette(population[:], probability) for i in xrange(size_pop)]
 		
@@ -342,15 +347,16 @@ def brachistochrone( cenas):
 	cenas.pu()
 	cenas.setpos(start[0]*50-250,start[1]*50-150)
 	#time.sleep(5)
-	points = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
+	points, bestpoints = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
 	cenas.pd()
 	cenas.color("blue")
 	for i in xrange(0,len(points)):
 		cenas.goto(points[i])
 		cenas.dot()
 	cenas.pu()
-	
+	bestpoints_fit = fitness(bestpoints)
 	print "Best took %f seconds " %population[0][1]
+	print "Real best: %f seconds " %bestpoints_fit
 	best.append(population[0][1])
 	return True
 
