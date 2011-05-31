@@ -7,6 +7,8 @@ from operator import itemgetter
 from xturtle import *
 from Tkinter import *
 
+from math import sin, cos, pi
+
 spamWriter = csv.writer(open('results.csv', 'wb'))
 #spamWriter.writerow(('Title 1','Title 1','Title 1'))
 #spamWriter.writerow(['Spam Spam', 'Lovely Spam', 'Wonderful Spam'])
@@ -72,7 +74,7 @@ while 1:
 
 def create_indiv(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
-	step = float(finish[0]-start[0])/(npoints+2)
+	step = float(finish[0]-start[0])/(npoints+1)
 	deltaX = float(finish[0]-start[0])/2
 	j=1
 	for i in xrange(0,npoints*2,2):
@@ -234,6 +236,36 @@ def stdev(population):
 	
 	return stdev
 
+def brachistochroneReal(x0, y0, x1, y1, n):
+    dy = y0 - y1
+    prec=10.0**-12
+
+    t1=0.0
+    t2=2*pi
+
+    xm=x0
+    while abs(xm-x1) > prec:
+        tm = (t1+t2)/2
+
+        if (1-cos(tm)==0):
+            continue
+
+        rm = dy / (1 - cos(tm))
+        xm = x0 + rm * (tm - sin(tm))
+
+        if (xm > x1):
+            #pag 258
+            t2 = tm
+        else:
+            t1 = tm
+
+    L=[]
+    r=rm
+    for i in xrange(n+1):
+        t=tm*i/n
+        L.append ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
+
+    return L
 
 def brachistochrone( rTurtle):
 	# create initial population
@@ -305,7 +337,6 @@ def brachistochrone( rTurtle):
 		points.append([population[0][0][i]*xScale-(canvasWidth/2)-start[0]*xScale , population[0][0][i+1]*yScale-(canvasHeight/2)-finish[1]*yScale +50])
 	points.append([finish[0]*xScale-(canvasWidth/2)-start[0]*xScale, finish[1]*yScale-(canvasHeight/2)-finish[1]*yScale + 50])
 
-	
 	drawCurve(rTurtle, points,xScale, yScale)
 	
 	print "Best took %f seconds " %population[0][1]
@@ -313,22 +344,26 @@ def brachistochrone( rTurtle):
 	return True
 
 def drawCurve( rTurtle, points, xScale, yScale):
-	#print points
-	#rTurtle.clear()
-	#rTurtle.pu()
-	#rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale)
-	#rTurtle.pd();
-	#rTurtle.goto(finish[0]*xScale-(canvasWidth/2)-start[0]*xScale, finish[1]*yScale-(canvasHeight/2)-finish[1]*yScale)
 	
 	rTurtle.clear()
 	rTurtle.pu()
 	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+50)
 	rTurtle.pd()
+	rTurtle.color("black")
 	for i in xrange(0,len(points)):
 		rTurtle.goto(points[i])
+		rTurtle.dot()
 	rTurtle.pu()
+	
 	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+50)
-
+	
+	points = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
+	rTurtle.pd()
+	rTurtle.color("blue")
+	for i in xrange(0, len(points)):
+		rTurtle.goto(points[i][0]*xScale-(canvasWidth/2)-start[0]*xScale, points[i][1]*yScale-(canvasHeight/2)-finish[1]*yScale+50)
+		rTurtle.dot()
+	rTurtle.pu()
 
 class App:
 
