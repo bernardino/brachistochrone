@@ -29,6 +29,9 @@ tsize = 20
 start = [1, 5]
 finish = [10,2]
 
+canvasWidth = 580
+canvasHeight = 290
+
 """size_gen = input("Numero de geraçoes: ")
 size_pop = input("Tamanho da populaçao: ")
 n_points = input("Numero de pontos: ")
@@ -261,13 +264,12 @@ def brachistochroneReal(x0, y0, x1, y1, n):
 	r=rm
 	for i in xrange(n+1):
 		t=tm*i/n
-		L.append ( [(x0+r*(t-sin(t)))*50-250, (y0-r*(1-cos(t)))*50-150] )
-		L2.extend ( [x0+r*(t-sin(t)), y0-r*(1-cos(t))] )
+		L.append ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
+		L2.extend ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
 	
 	return L, L2
 
-
-def brachistochrone( cenas):
+def brachistochrone( rTurtle):
 	# create initial population
 	population = create_population(size_pop)
 	
@@ -331,35 +333,45 @@ def brachistochrone( cenas):
 		
 		
 	points = []
-	points.append([start[0]*50-250,start[1]*50-150])
+	
+	xScale = canvasWidth/(finish[0] - start[0])
+	yScale = canvasHeight/(start[1] - finish[1])
+	
 	for i in xrange(0,len(population[0][0]),2):
-		points.append([population[0][0][i]*50-250, population[0][0][i+1]*50-150])
-	points.append([finish[0]*50-250, finish[1]*50-150])
-	#print points
-	cenas.clear()
-	cenas.pu()
-	cenas.setpos(start[0]*50-250,start[1]*50-150)
-	cenas.color("black")
-	cenas.pd()
-	for i in xrange(0,len(points)):
-		cenas.goto(points[i])
-		cenas.dot()
-	cenas.pu()
-	cenas.setpos(start[0]*50-250,start[1]*50-150)
-	#time.sleep(5)
-	points, bestpoints = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
-	cenas.pd()
-	cenas.color("blue")
-	for i in xrange(0,len(points)):
-		cenas.goto(points[i])
-		cenas.dot()
-	cenas.pu()
-	bestpoints_fit = fitness(bestpoints)
+		points.append([population[0][0][i]*xScale-(canvasWidth/2)-start[0]*xScale , population[0][0][i+1]*yScale-(canvasHeight/2)-finish[1]*yScale +100])
+	points.append([finish[0]*xScale-(canvasWidth/2)-start[0]*xScale, finish[1]*yScale-(canvasHeight/2)-finish[1]*yScale + 100])
+	
+	drawCurve(rTurtle, points,xScale, yScale)
+	
 	print "Best took %f seconds " %population[0][1]
-	print "Real best: %f seconds " %bestpoints_fit
+	
+	
 	best.append(population[0][1])
 	return True
 
+def drawCurve( rTurtle, points, xScale, yScale):
+	rTurtle.ht()
+	rTurtle.clear()
+	rTurtle.pu()
+	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+100)
+	rTurtle.pd()
+	rTurtle.color("black")
+	for i in xrange(0,len(points)):
+		rTurtle.goto(points[i])
+		rTurtle.dot()
+	rTurtle.pu()
+	
+	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+100)
+	
+	points, bestpoints = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
+	rTurtle.pd()
+	rTurtle.color("blue")
+	for i in xrange(0, len(points)):
+		rTurtle.goto(points[i][0]*xScale-(canvasWidth/2)-start[0]*xScale, points[i][1]*yScale-(canvasHeight/2)-finish[1]*yScale+100)
+		rTurtle.dot()
+	rTurtle.pu()
+	best_fit = fitness(bestpoints)
+	print "Real best: %f seconds " %best_fit
 
 class App:
 
@@ -530,8 +542,8 @@ class App:
 		self.tsizeEntry = Entry (frame, width = 20, textvariable = self.tournamentSize)
 		self.tsizeEntry.place(w=40, h=25,x=140,y=530)
 			 
-		self.canvas = Canvas(root,width=580,height=500,bg="white")
-		self.canvas.place(w=580,h=500,x=200,y=10)	
+		self.canvas = Canvas(root,width=canvasWidth+30,height=canvasHeight+290,bg="white")
+		self.canvas.place(w=canvasWidth+30,h=canvasHeight+290,x=200,y=10)	
 		
 		
 	
