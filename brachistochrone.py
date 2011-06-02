@@ -26,51 +26,11 @@ prec = 0.5
 rec_points = 3
 seleccao = 2
 tsize = 20
-start = [1, 5]
+start = [0, 5]
 finish = [10,2]
 
 canvasWidth = 580
 canvasHeight = 290
-
-"""size_gen = input("Numero de geraçoes: ")
-size_pop = input("Tamanho da populaçao: ")
-n_points = input("Numero de pontos: ")
-
-while 1:
-	representacao = raw_input("Representação:\n  1-Pontos com espaçamento bem definido\n  2-Pontos espaçados aleatoriamente\n")
-	if representacao=='1' or representacao=='2':
-		representacao = int(representacao)
-		break
-
-elite = input("Elitismo: ")
-
-while 1:
-	pgene = input("Probabilidade de mutação (0-1): ")
-	if pgene >= 0 and pgene <= 1:
-		break
-	
-while 1:
-	prec = input("Probabilidade de recombinação (0-1): ")
-	if prec >= 0 and prec <= 1:
-		if prec>0:
-			rec_points = input("Numero de pontos para recombinação: ")
-		break
-
-while 1:
-	seleccao = raw_input("Seleccao:\n  1-Roleta\n  2-Torneio\n")
-	if seleccao == '1' or seleccao == '2':
-		seleccao = int(seleccao)
-		break
-
-if seleccao==2:
-	tsize = input("Tamanho do torneio: ")
-
-start = [int(s) for s in raw_input("Coordenadas do ponto de partida (x y): ").split()]
-
-while 1:
-	finish = [int(s) for s in raw_input("Coordenadas do ponto de chegada (x y): ").split()]
-	if start[1]>finish[1] and start[0]<finish[0]:
-		break"""
 
 def create_indiv(npoints):
 	indiv = [0 for i in xrange(npoints*2)]
@@ -314,13 +274,12 @@ def brachistochrone( rTurtle):
 		offspring2.sort(key=itemgetter(1))
 		
 		# select survivors
-		for i in xrange(elite):
+		for i in xrange(size_pop - elite):
 			population[size_pop-i-1] = offspring2[i][:]
-		#population[size_pop-elite:] = offspring2[:elite]
+		
 		population2 = [[indiv[0][:], fitness(start+indiv[0][:]+finish)] for indiv in population]
 		population = sorted(population2[:], key=itemgetter(1))
-		#print population[0][0]
-		#print 'fitness %lf'%(population[0][1])
+		
 		FILE.write("Generation: "+str(generation+1)+"\n\n")
 		FILE.write("Best: "+str(population[0][1])+" seconds\n")
 		FILE.write("Worst: "+str(population[-1][1])+" seconds\n")
