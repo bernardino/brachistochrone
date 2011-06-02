@@ -91,8 +91,9 @@ def tournament(individuos, tsize):
 
 
 def roulette(individuos, probability):
+	rand = random.random()
 	for i in xrange(len(individuos)):
-		if random.random() <= probability[i]:
+		if rand <= probability[i]:
 			aux = [[],0]
 			aux[0].extend(individuos[0][0])
 			aux[1] = individuos[0][1]
@@ -246,7 +247,7 @@ def brachistochrone( rTurtle):
 		else: # roulette
 			sumfitness = 0.0
 			for i in population:
-				sumfitness += 1/i[1]
+				sumfitness += 1.0/i[1]
 			
 			probability = [0 for i in xrange(size_pop)]
 			sumprob = 0.0
@@ -354,7 +355,7 @@ class App:
 			start[1] = float(self.startPointY.get())
 			finish[0] = float(self.finishPointX.get())
 			finish[1] = float(self.finishPointY.get())
-			random.seed(random.randint(0,10000))
+			
 			brachistochrone(rt)
 			self.startButton.configure(state=NORMAL)
 		except ValueError:
