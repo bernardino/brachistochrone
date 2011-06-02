@@ -237,35 +237,37 @@ def stdev(population):
 	return stdev
 
 def brachistochroneReal(x0, y0, x1, y1, n):
-    dy = y0 - y1
-    prec=10.0**-12
-
-    t1=0.0
-    t2=2*pi
-
-    xm=x0
-    while abs(xm-x1) > prec:
-        tm = (t1+t2)/2
-
-        if (1-cos(tm)==0):
-            continue
-
-        rm = dy / (1 - cos(tm))
-        xm = x0 + rm * (tm - sin(tm))
-
-        if (xm > x1):
-            #pag 258
-            t2 = tm
-        else:
-            t1 = tm
-
-    L=[]
-    r=rm
-    for i in xrange(n+1):
-        t=tm*i/n
-        L.append ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
-
-    return L
+	dy = y0 - y1
+	prec=10.0**-12
+	
+	t1=0.0
+	t2=2*pi
+	
+	xm=x0
+	while abs(xm-x1) > prec:
+		tm = (t1+t2)/2
+		
+		if (1-cos(tm)==0):
+			continue
+		
+		rm = dy / (1 - cos(tm))
+		xm = x0 + rm * (tm - sin(tm))
+		
+		if (xm > x1):
+			#pag 258
+			t2 = tm
+		else:
+			t1 = tm
+	
+	L = []
+	L2 = []
+	r=rm
+	for i in xrange(n+1):
+		t=tm*i/n
+		L.append ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
+		L2.extend ( [(x0+r*(t-sin(t))), (y0-r*(1-cos(t)))] )
+	
+	return L, L2
 
 def brachistochrone( rTurtle):
 	# create initial population
@@ -278,6 +280,8 @@ def brachistochrone( rTurtle):
 		parents = []
 		# select parents
 		if seleccao==2: # tournament
+			for i in xrange(size_pop):
+				parents.extend([tournament(population[:],tsize)])
 			parents = [tournament(population[:], tsize) for i in xrange(size_pop)]
 		else: # roulette
 			sumfitness = 0.0
@@ -287,7 +291,7 @@ def brachistochrone( rTurtle):
 			probability = [0 for i in xrange(size_pop)]
 			sumprob = 0.0
 			for i in xrange(size_pop):
-				probability[i] = sumprob + ((1/population[i][1]) / sumfitness)
+				probability[i] = sumprob + float((1.0/population[i][1]) / sumfitness)
 				sumprob += probability[i]
 			parents = [roulette(population[:], probability) for i in xrange(size_pop)]
 		
@@ -334,20 +338,22 @@ def brachistochrone( rTurtle):
 	yScale = canvasHeight/(start[1] - finish[1])
 	
 	for i in xrange(0,len(population[0][0]),2):
-		points.append([population[0][0][i]*xScale-(canvasWidth/2)-start[0]*xScale , population[0][0][i+1]*yScale-(canvasHeight/2)-finish[1]*yScale +50])
-	points.append([finish[0]*xScale-(canvasWidth/2)-start[0]*xScale, finish[1]*yScale-(canvasHeight/2)-finish[1]*yScale + 50])
-
+		points.append([population[0][0][i]*xScale-(canvasWidth/2)-start[0]*xScale , population[0][0][i+1]*yScale-(canvasHeight/2)-finish[1]*yScale +100])
+	points.append([finish[0]*xScale-(canvasWidth/2)-start[0]*xScale, finish[1]*yScale-(canvasHeight/2)-finish[1]*yScale + 100])
+	
 	drawCurve(rTurtle, points,xScale, yScale)
 	
 	print "Best took %f seconds " %population[0][1]
+	
+	
 	best.append(population[0][1])
 	return True
 
 def drawCurve( rTurtle, points, xScale, yScale):
-	
+	rTurtle.ht()
 	rTurtle.clear()
 	rTurtle.pu()
-	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+50)
+	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+100)
 	rTurtle.pd()
 	rTurtle.color("black")
 	for i in xrange(0,len(points)):
@@ -355,15 +361,17 @@ def drawCurve( rTurtle, points, xScale, yScale):
 		rTurtle.dot()
 	rTurtle.pu()
 	
-	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+50)
+	rTurtle.setpos(start[0]*xScale-(canvasWidth/2)-start[0]*xScale, start[1] *yScale-(canvasHeight/2)-finish[1]*yScale+100)
 	
-	points = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
+	points, bestpoints = brachistochroneReal(start[0], start[1], finish[0], finish[1], n_points+2)
 	rTurtle.pd()
 	rTurtle.color("blue")
 	for i in xrange(0, len(points)):
-		rTurtle.goto(points[i][0]*xScale-(canvasWidth/2)-start[0]*xScale, points[i][1]*yScale-(canvasHeight/2)-finish[1]*yScale+50)
+		rTurtle.goto(points[i][0]*xScale-(canvasWidth/2)-start[0]*xScale, points[i][1]*yScale-(canvasHeight/2)-finish[1]*yScale+100)
 		rTurtle.dot()
 	rTurtle.pu()
+	best_fit = fitness(bestpoints)
+	print "Real best: %f seconds " %best_fit
 
 class App:
 
@@ -534,8 +542,8 @@ class App:
 		self.tsizeEntry = Entry (frame, width = 20, textvariable = self.tournamentSize)
 		self.tsizeEntry.place(w=40, h=25,x=140,y=530)
 			 
-		self.canvas = Canvas(root,width=canvasWidth+30,height=canvasHeight+150,bg="white")
-		self.canvas.place(w=canvasWidth+30,h=canvasHeight+150,x=200,y=10)	
+		self.canvas = Canvas(root,width=canvasWidth+30,height=canvasHeight+290,bg="white")
+		self.canvas.place(w=canvasWidth+30,h=canvasHeight+290,x=200,y=10)	
 		
 		
 	
