@@ -254,7 +254,9 @@ def brachistochrone( rTurtle):
 			for i in xrange(size_pop):
 				probability[i] = sumprob + float((1.0/population[i][1]) / sumfitness)
 				sumprob += probability[i]
-			parents = [roulette(population[:], probability) for i in xrange(size_pop)]
+			
+			for i in xrange(size_pop):
+				parents.extend([roulette(population[:], probability)])
 		
 		# produce offspring
 		offspring = []
